@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head class="page">
+  <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo" href="index.html">
+  <body class="page">
+    <header class="page-header">
+      <a class="page-header__logo">
         <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
       </a>
       <nav class="main-nav">
@@ -14,23 +14,22 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
-          <li class="main-nav__item site-list__item">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          <li class="site-list__item site-list__item--catalog">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item site-list__item">
-            <a class="main-nav__link main-nav__link--active">Вязание на заказ</a>
+          <li class="site-list__item site-list__item--bind">
+            <a class="site-list__link">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item site-list__item">
-            <form class="main-nav__form site-list__form" action="https://echo.htmlacademy.ru" method="POST">
-              <input class="main-nav__search site-list__search" id="header-search" type="search" placeholder="Поиск по сайту">
+          <li class="site-list__item">
+            <form class="site-list__form" action="https://echo.htmlacademy.ru" method="GET">
               <label class="visually-hidden" for="header-search">Поиск по сайту</label>
-              <button class="main-nav__button site-list__button visually-hidden" type="submit">Найти</button>
+              <input class="main-nav__search site-list__search" id="header-search" type="search" placeholder="Поиск по сайту">
             </form>
           </li>
         </ul>
         <ul class="main-nav__list shopping-list">
-          <li class="main-nav__item shopping-list__item">
-            <a href="#" class="main-nav__link shopping-list__link">Корзина: пока пуста</a>
+          <li class="shopping-list__item">
+            <a class="shopping-list__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -40,25 +39,25 @@
       <section class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item social__item--instagram">
-            <a class="social__link" href="https://www.instagram.com/htmlacademy">
+            <a class="social__link" href="https://www.instagram.com/htmlacademy" target="_blank">
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
           <li class="social__item social__item--facebook">
-            <a class="social__link" href="https://www.facebook.com/htmlacademy">
+            <a class="social__link" href="https://www.facebook.com/htmlacademy" target="_blank">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="social__item social__item--twitter">
-            <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+            <a class="social__link" href="https://twitter.com/htmlacademy_ru" target="_blank">
               <span class="visually-hidden">Twitter</span>
             </a>
           </li>
         </ul>
       </section>
       <section class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
       </section>
     </footer>
   </body>

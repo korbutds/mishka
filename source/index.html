@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head class="page">
+  <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo">
+  <body class="page">
+    <header class="page-header">
+      <a class="page-header__logo">
         <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
       </a>
-      <!-- main-nav - для оформления, site- nav для позиционирования -->
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
-          <li class="main-nav__item site-list__item">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          <li class="site-list__item site-list__item--catalog">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item site-list__item">
-            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          <li class="site-list__item site-list__item--bind">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item site-list__item">
-            <form class="main-nav__form site-list__form" action="https://echo.htmlacademy.ru" method="POST">
-              <input class="main-nav__search site-list__search" id="header-search" type="search" placeholder="Поиск по сайту">
+          <li class="site-list__item">
+            <form class="site-list__form" action="https://echo.htmlacademy.ru" method="GET">
               <label class="visually-hidden" for="header-search">Поиск по сайту</label>
-              <button class="main-nav__button site-list__button visually-hidden" type="submit">Найти</button>
+              <input class="main-nav__search site-list__search" id="header-search" type="search" placeholder="Поиск по сайту">
             </form>
           </li>
         </ul>
         <ul class="main-nav__list shopping-list">
-          <li class="main-nav__item shopping-list__item">
-            <a href="#" class="main-nav__link shopping-list__link">Корзина: пока пуста</a>
+          <li class="shopping-list__item">
+            <a class="shopping-list__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -42,12 +40,12 @@
       <section class="products">
         <h2 class="visually-hidden">Наши товары</h2>
         <b class="products__slogan">Милые штуки ручной работы для дома</b>
-        <ul class="products__list mishki-list">
-          <li class="products__item products__item--interior-item mishki-list__item">
-            <a class="products__link" href="#">Предметы<br>интерьера</a>
+        <ul class="products__list">
+          <li class="products__item products__item--interior-item">
+            <a class="products__link" href="#">Предметы интерьера</a>
           </li>
           <li class="products__item products__item--toys">
-            <a class="products__link" href="#">Детские<br>игрушки</a>
+            <a class="products__link" href="#">Детские игрушки</a>
           </li>
         </ul>
       </section>
@@ -69,19 +67,21 @@
             <dd class="week-product__description">15 см</dd>
           </div>
         </dl>
-        <img class="week-product__image" src="https://via.placeholder.com/162x100" width="162" height="100" alt="Вязанная корзинка цвета «Тиффани»/серый">
+        <div class="week-product__image-container">
+          <img class="week-product__image" src="https://via.placeholder.com/162x100" width="162" height="100" alt="Вязанная корзинка цвета «Тиффани»/серый">
+        </div>
         <p class="week-product__price">Цена: 990 руб.</p>
         <a class="button week-product__button js-order" href="#">Заказать</a>
       </section>
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
-        <ul class="about-us__list features-list">
-          <li class="features-list__item features-list__item--eco">Экологически<br>чистые материалы</li>
-          <li class="features-list__item features-list__item--scandinavian">Скандинавский стиль<br>по российской цене</li>
-          <li class="features-list__item features-list__item--likes">Увеличивает лайки<br>на фотографиях</li>
-          <li class="features-list__item features-list__item--hand-made">Связано вручную с<br>любовью и умилением</li>
-          <li class="features-list__item features-list__item--native">Поддержка отечественного производителя</li>
-          <li class="features-list__item features-list__item--gift-box">Поставляется в<br>подарочной упаковке</li>
+        <ul class="about-us__list">
+          <li class="about-us__item about-us__item--eco">Экологически чистые материалы</li>
+          <li class="about-us__item about-us__item--scandinavian">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item about-us__item--likes">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item about-us__item--hand-made">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item about-us__item--native">Поддержка отечественного производителя</li>
+          <li class="about-us__item about-us__item--gift-box">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
     </main>
@@ -90,25 +90,25 @@
       <section class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item social__item--instagram">
-            <a class="social__link" href="https://www.instagram.com/htmlacademy">
+            <a class="social__link" href="https://www.instagram.com/htmlacademy" target="_blank">
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
           <li class="social__item social__item--facebook">
-            <a class="social__link" href="https://www.facebook.com/htmlacademy">
+            <a class="social__link" href="https://www.facebook.com/htmlacademy" target="_blank">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="social__item social__item--twitter">
-            <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+            <a class="social__link" href="https://twitter.com/htmlacademy_ru" target="_blank">
               <span class="visually-hidden">Twitter</span>
             </a>
           </li>
         </ul>
       </section>
       <section class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
       </section>
     </footer>
   </body>
