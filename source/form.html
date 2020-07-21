@@ -35,6 +35,62 @@
       </nav>
     </header>
 
+    <main class="page-main form-page">
+      <h1 class="form-page__title">Вязание на заказ</h1>
+      <p class="form-page__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="form-page__form" action="POST" action="https://echo.htmlacademy.ru">
+        <fieldset class="form-page__fieldset">
+          <legend class="form-page__legend">Тип</legend>
+          <input class="visually-hidden" type="radio" name="bind-type" id="accessory" checked>
+          <input class="visually-hidden" type="radio" name="bind-type" id="toy">
+          <div class="form-page__label-wrapper">
+            <label class="form-page__label form-page__label--radio" for="accessory">Аксессуар для интерьера</label>
+            <label class="form-page__label form-page__label--radio" for="toy">Детская игрушка</label>
+          </div>
+        </fieldset>
+        <fieldset class="form-page__fieldset">
+          <legend class="form-page__legend">Цвет</legend>
+          <input class="visually-hidden" type="checkbox" name="bind-color" id="white" checked>
+          <input class="visually-hidden" type="checkbox" name="bind-color" id="grey" checked>
+          <input class="visually-hidden" type="checkbox" name="bind-color" id="tiffany">
+          <input class="visually-hidden" type="checkbox" name="bind-color" id="black">
+          <input class="visually-hidden" type="checkbox" name="bind-color" id="pink">
+          <input class="visually-hidden" type="checkbox" name="bind-color" id="orange">
+          <div class="form-page__label-wrapper">
+            <label class="form-page__label form-page__label--checkbox" for="white">Белый</label>
+            <label class="form-page__label form-page__label--checkbox" for="grey">Серый</label>
+            <label class="form-page__label form-page__label--checkbox" for="tiffany">«Тиффани»</label>
+            <label class="form-page__label form-page__label--checkbox" for="black">Черный</label>
+            <label class="form-page__label form-page__label--checkbox" for="pink">Розовый</label>
+            <label class="form-page__label form-page__label--checkbox" for="orange">Оранжевый</label>
+          </div>
+        </fieldset>
+        <fieldset class="form-page__fieldset">
+          <legend class="form-page__legend">ФИО</legend>
+          <label for="form-name">Имя:</label>
+          <input class="form-page__input form-page__input--name" id="form-name" type="text" placeholder="Введите ваше имя*" required>
+          <label for="form-surname">Фамилия:</label>
+          <input class="form-page__input form-page__input--name" id="form-surname" type="text" placeholder="Укажите фамилию*" required>
+          <label for="form-patronymic">Отчество:</label>
+          <input class="form-page__input form-page__input--name" id="form-patronymic" type="text" placeholder="Отчество, если желаете">
+        </fieldset>
+        <fieldset class="form-page__tel">
+          <legend class="form-page__legend">Тел</legend>
+          <input class="form-page__input form-page__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+        </fieldset>
+        <fieldset class="form-page__email">
+          <legend class="form-page__legend">e-mail</legend>
+          <input class="form-page__input form-page__input--email" type="email" placeholder="Ваш Email*" required>
+        </fieldset>
+        <fieldset class="form-page__email">
+          <legend class="form-page__legend">доп</legend>
+          <textarea class="form-page__input form-page__input--add" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
+        </fieldset>
+        <small class="form-page__attention">*Поля обязательны для заполнения</small>
+        <button class="button form_page__submit">Оиправить заказ</button>
+      </form>
+    </main>
+
     <footer class="page-footer">
       <section class="page-footer__social social">
         <ul class="social__list">
