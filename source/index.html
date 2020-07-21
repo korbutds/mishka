@@ -126,5 +126,24 @@
         <a class="botton contacts__button" href="#">Напишите нам</a>
       </section>
     </main>
+    <section class="cart-modal">
+      <h2 class="cart-modal__title">Добавить в корзину</h2>
+      <form class="cart-modal__form" action="POST" action="https://echo.htmlacademy.ru">
+        <p class="cart-modal__label">Выберите размер:</p>
+        <label>
+          <p class="cart-modal__size-value">S</p>
+          <input class="cart-modal__radio" type="radio" id="cart-modal__size-id" value="S-size" name="cart-modal__size" checked>
+        </label>
+        <label>
+          <p class="cart-modal__size-value">M</p>
+          <input class="cart-modal__radio" type="radio" id="cart-modal__size-id" value="M-size" name="cart-modal__size">
+        </label>
+        <label>
+          <p class="cart-modal__size-value">L</p>
+          <input class="cart-modal__radio" type="radio" id="cart-modal__size-id" value="L-size" name="cart-modal__size">
+        </label>
+        <button class="button cart-modal__button" type="submit">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>
