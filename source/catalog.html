@@ -6,7 +6,7 @@
   </head>
   <body class="page">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo logo" href="index.html">
         <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
       </a>
       <nav class="main-nav">
@@ -20,7 +20,7 @@
           <li class="site-list__item site-list__item--bind">
             <a class="site-list__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--search">
             <form class="site-list__form" action="https://echo.htmlacademy.ru" method="GET">
               <label class="visually-hidden" for="header-search">Поиск по сайту</label>
               <input class="main-nav__search site-list__search" id="header-search" type="search" placeholder="Поиск по сайту">
@@ -39,7 +39,7 @@
       <h1 class="page-main__title">Каталог товаров</h1>
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
-        <ul class="catalog-section__list">
+        <ul class="catalog__list">
           <li class="catalog__item">
             <div class="catalog__description">
               <a class="catalog__link" href="#">
@@ -61,7 +61,7 @@
             </div>
             <div class="catalog__order">
               <p class="catalog__cost">1200 руб.</p>
-              <button class="catalog__to-basket js-cart" type="button"><span class="visually-hidden">Добавить в корзину</span></button>
+              <a class="catalog__to-basket js-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
             </div>
           </li>
           <li class="catalog__item">
@@ -85,7 +85,7 @@
             </div>
             <div class="catalog__order">
               <p class="catalog__cost">690 руб.</p>
-              <button class="catalog__to-basket js-cart" type="button"><span class="visually-hidden">Добавить в корзину</span></button>
+              <a class="catalog__to-basket js-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
             </div>
           </li>
           <li class="catalog__item">
@@ -109,7 +109,7 @@
             </div>
             <div class="catalog__order">
               <p class="catalog__cost">1500 руб.</p>
-              <button class="catalog__to-basket js-cart" type="button"><span class="visually-hidden">Добавить в корзину</span></button>
+              <a class="catalog__to-basket js-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
             </div>
           </li>
         </ul>
