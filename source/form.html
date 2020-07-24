@@ -6,10 +6,12 @@
   </head>
   <body class="page">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
-      </a>
       <nav class="main-nav">
+        <a class="page-header__logo logo" href="index.html">
+          <img class="logo--mobile-type" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
+          <img class="logo--tablet-type" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
+          <img class="logo--desktop-type" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
+        </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -18,24 +20,94 @@
             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item site-list__item--bind">
-            <a class="site-list__link">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <form class="site-list__form" action="https://echo.htmlacademy.ru" method="GET">
-              <label class="visually-hidden" for="header-search">Поиск по сайту</label>
-              <input class="main-nav__search site-list__search" id="header-search" type="search" placeholder="Поиск по сайту">
-            </form>
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="main-nav__list shopping-list">
+          <li class="shopping-list__item shopping-list__item--search">
+            <form class="shopping-list__form" action="https://echo.htmlacademy.ru" method="GET">
+              <label class="visually-hidden" for="header-search">Поиск по сайту</label>
+              <input class="main-nav__search shopping-list__search" id="header-search" type="search" placeholder="Поиск по сайту">
+            </form>
+          </li>
           <li class="shopping-list__item">
             <a class="shopping-list__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
+        <ul class="main-nav__list catalog-nav-list">
+          <li class="catalog-nav-list__item catalog-nav-list__item--new"><a class="catalog-nav-list__link" href="#">Новые поступления</a></li>
+          <li class="catalog-nav-list__item catalog-nav-list__item--sale"><a class="catalog-nav-list__link" href="#">Распродажа</a></li>
+        </ul>
+        <p class="features-list__link">Бесплатная доставка по России</p>
       </nav>
     </header>
 
+    <main class="page-main form-page">
+      <h1 class="form-page__title">Вязание на заказ</h1>
+      <p class="form-page__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="form-page__form" action="POST" action="https://echo.htmlacademy.ru">
+        <fieldset class="form-page__fieldset form-page__fieldset--type">
+          <p class="form-page__legend form-page__legend--type">Тип</p>
+          <input class="visually-hidden" type="radio" name="bind-type" id="accessory" value="accessory" checked>
+          <input class="visually-hidden" type="radio" name="bind-type" id="toys" value="toys">
+          <div class="form-page__label-wrapper">
+            <label class="form-page__label form-page__label--radio" for="accessory">Аксессуар для интерьера</label>
+            <label class="form-page__label form-page__label--radio" for="toy">Детская игрушка</label>
+          </div>
+        </fieldset>
+        <fieldset class="form-page__fieldset form-page__fieldset--color">
+          <p class="form-page__legend form-page__legend--color">Цвет</p>
+          <input class="visually-hidden" type="checkbox" name="white" id="white" checked>
+          <input class="visually-hidden" type="checkbox" name="grey" id="grey" checked>
+          <input class="visually-hidden" type="checkbox" name="tiffany" id="tiffany">
+          <input class="visually-hidden" type="checkbox" name="black" id="black">
+          <input class="visually-hidden" type="checkbox" name="pink" id="pink">
+          <input class="visually-hidden" type="checkbox" name="orange" id="orange">
+          <div class="form-page__label-wrapper">
+            <label class="form-page__label form-page__label--checkbox" for="white">Белый</label>
+            <label class="form-page__label form-page__label--checkbox" for="grey">Серый</label>
+            <label class="form-page__label form-page__label--checkbox" for="tiffany">«Тиффани»</label>
+            <label class="form-page__label form-page__label--checkbox" for="black">Черный</label>
+            <label class="form-page__label form-page__label--checkbox" for="pink">Розовый</label>
+            <label class="form-page__label form-page__label--checkbox" for="orange">Оранжевый</label>
+          </div>
+        </fieldset>
+        <fieldset class="form-page__fieldset form-page__fieldset--fio">
+          <p class="form-page__legend form-page__legend--fio">ФИО</p>
+          <p class="form-page__input-wrapper">
+            <label for="form-page__label form-page__label--name">Имя:</label>
+            <input class="form-page__input form-page__input--name" id="form-name" type="text" placeholder="Введите ваше имя*" required>
+          </p>
+          <p class="form-page__input-wrapper">
+            <label for="form-page__label form-page__label--surname">Фамилия:</label>
+            <input class="form-page__input form-page__input--surname" id="form-surname" type="text" placeholder="Укажите фамилию*" required>
+          </p>
+          <p class="form-page__input-wrapper">
+            <label for="form-page__label form-page__label--patronymic">Отчество:</label>
+            <input class="form-page__input form-page__input--patronymic" id="form-patronymic" type="text" placeholder="Отчество, если желаете">
+          </p>
+        </fieldset>
+        <fieldset class="form-page__fieldset form-page__fieldset--tel">
+          <p class="form-page__legend form-page__legend--tel">Тел</p>
+          <input class="form-page__input form-page__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+        </fieldset>
+        <fieldset class="form-page__fieldset form-page__fieldset--email">
+          <p class="form-page__legend form-page__legend--email">e-mail</p>
+          <input class="form-page__input form-page__input--email" type="email" placeholder="Ваш Email*" required>
+        </fieldset>
+        <fieldset class="form-page__fieldset form-page__fieldset--add">
+          <p class="form-page__legend">доп</p>
+          <textarea class="form-page__input form-page__input--add" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
+        </fieldset>
+        <small class="form-page__attention">*Поля обязательны для заполнения</small>
+        <button class="button form_page__submit" type="submit">Отправить заказ</button>
+      </form>
+    </main>
+
     <footer class="page-footer">
+      <a class="page-footer__logo logo">
+        <img class="logo__footer-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
+      </a>
       <section class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item social__item--instagram">
