@@ -6,12 +6,12 @@
   </head>
   <body class="page">
     <header class="page-header">
-      <a class="page-header__logo logo" href="index.html">
-        <img class="logo--mobile-type" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
-        <img class="logo--tablet-type" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
-        <img class="logo--desktop-type" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
-      </a>
       <nav class="main-nav">
+        <a class="page-header__logo logo" href="index.html">
+          <img class="logo--mobile-type" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
+          <img class="logo--tablet-type" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
+          <img class="logo--desktop-type" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
+        </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -24,7 +24,7 @@
           </li>
         </ul>
         <ul class="main-nav__list shopping-list">
-          <li class="shopping-list__item">
+          <li class="shopping-list__item shopping-list__item--search">
             <form class="shopping-list__form" action="https://echo.htmlacademy.ru" method="GET">
               <label class="visually-hidden" for="header-search">Поиск по сайту</label>
               <input class="main-nav__search shopping-list__search" id="header-search" type="search" placeholder="Поиск по сайту">
@@ -35,14 +35,10 @@
           </li>
         </ul>
         <ul class="main-nav__list catalog-nav-list">
-          <li class="catalog-nav-list__item"><a class="catalog-nav-list__link" href="#">Новые поступления</a></li>
-          <li class="catalog-nav-list__item"><a class="catalog-nav-list__link" href="#">Распродажа</a></li>
+          <li class="catalog-nav-list__item catalog-nav-list__item--new"><a class="catalog-nav-list__link" href="#">Новые поступления</a></li>
+          <li class="catalog-nav-list__item catalog-nav-list__item--sale"><a class="catalog-nav-list__link" href="#">Распродажа</a></li>
         </ul>
-        <ul class="main-nav__list features-list">
-          <li class="features-list__item">
-            <a class="features-list__link" href="#">Бесплатная доставка по России</a>
-          </li>
-        </ul>
+        <p class="features-list__link">Бесплатная доставка по России</p>
       </nav>
     </header>
 
@@ -92,22 +88,16 @@
           </p>
         </fieldset>
         <fieldset class="form-page__fieldset form-page__fieldset--tel">
-          <p class="form-page__input-wrapper">
-            <p class="form-page__legend form-page__legend--tel">Тел</p>
-            <input class="form-page__input form-page__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-          </p>
+          <p class="form-page__legend form-page__legend--tel">Тел</p>
+          <input class="form-page__input form-page__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
         </fieldset>
         <fieldset class="form-page__fieldset form-page__fieldset--email">
-          <p class="form-page__input-wrapper">
-            <p class="form-page__legend form-page__legend--email">e-mail</p>
-            <input class="form-page__input form-page__input--email" type="email" placeholder="Ваш Email*" required>
-          </p>
+          <p class="form-page__legend form-page__legend--email">e-mail</p>
+          <input class="form-page__input form-page__input--email" type="email" placeholder="Ваш Email*" required>
         </fieldset>
         <fieldset class="form-page__fieldset form-page__fieldset--add">
-          <p class="form-page__input-wrapper">
-            <p class="form-page__legend">доп</p>
-            <textarea class="form-page__input form-page__input--add" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
-          </p>
+          <p class="form-page__legend">доп</p>
+          <textarea class="form-page__input form-page__input--add" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
         </fieldset>
         <small class="form-page__attention">*Поля обязательны для заполнения</small>
         <button class="button form_page__submit" type="submit">Отправить заказ</button>
@@ -115,12 +105,10 @@
     </main>
 
     <footer class="page-footer">
-
+      <a class="page-footer__logo logo">
+        <img class="logo__footer-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
+      </a>
       <section class="page-footer__social social">
-        <a class="page-footer__logo logo">
-          <img class="logo--tablet-type" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
-          <img class="logo--desktop-type" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
-        </a>
         <ul class="social__list">
           <li class="social__item social__item--instagram">
             <a class="social__link" href="https://www.instagram.com/htmlacademy" target="_blank">
