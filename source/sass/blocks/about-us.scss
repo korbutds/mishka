@@ -1,0 +1,58 @@
+.about-us__title {
+  @include mishki-title;
+}
+
+.about-us__list {
+  @include list-style-zero;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.about-us__item {
+  margin-bottom: 30px;
+  padding-top: 53px;
+
+  &--eco {
+    background-image: url("../../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 32px 37px;
+  }
+
+  &--scandinavian {
+    background-image: url("../../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 47px 27px;
+  }
+
+  &--likes {
+    background-image: url("../../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 34px 27px;
+  }
+
+  &--hand-made {
+    background-image: url("../../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 35px 34px;
+  }
+
+  &--native {
+    background-image: url("../../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 55px 23px;
+  }
+
+  &--gift-box {
+    background-image: url("../../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 33px 32px;
+  }
+}

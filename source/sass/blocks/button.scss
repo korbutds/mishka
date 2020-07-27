@@ -1,0 +1,27 @@
+.button {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  font: inherit;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $mishka-button;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: $bcg-color;
+  border: 2px solid $mishka-button;
+
+  &:hover,
+  &:focus {
+    background-color: $mishka-button;
+    color: $bcg-color;
+  }
+
+  &:active {
+    color: rgba($color: $bcg-color, $alpha: 0.3);
+  }
+}

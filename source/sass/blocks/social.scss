@@ -1,0 +1,28 @@
+.social__list {
+  @include list-style-zero;
+}
+
+.social__link {
+  display: block;
+  height: 80px;
+}
+
+.social__item {
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+  &--instagram {
+    background-image: url("../../img/icon-insta.svg");
+    background-size: 22px 21px;
+  }
+
+  &--facebook {
+    background-image: url("../../img/icon-fb.svg");
+    background-size: 15px 28px;
+  }
+
+  &--twitter {
+    background-image: url("../../img/icon-twitter.svg");
+    background-size: 23px 20px;
+  }
+}

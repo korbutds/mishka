@@ -1,0 +1,4 @@
+.catalog-nav-list__link {
+  @include link-behavior;
+  display: none;
+}

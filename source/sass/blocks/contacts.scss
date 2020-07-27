@@ -1,0 +1,35 @@
+.contacts__title {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts-list {
+  color: $mishka-button;
+}
+
+.contacts__property {
+  margin: 0;
+}
+
+.contacts__e-mail {
+  color: $mishka-button;
+
+  text-decoration: none;
+  border-bottom: 1px solid $mishka-main;
+
+  &:hover,
+  &:focus {
+    color: $mishka-main;
+  }
+
+  &:active {
+    border: none;
+  }
+}
+
+.contacts__map-wrapper {
+  width: 322px;
+  height: 457px;
+}

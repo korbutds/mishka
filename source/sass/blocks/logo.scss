@@ -1,0 +1,9 @@
+.logo {
+  &--tablet-type {
+    display: none;
+  }
+  &--desktop-type {
+    display: none;
+  }
+    @include link-behavior;
+}

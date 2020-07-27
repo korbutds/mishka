@@ -1,0 +1,42 @@
+.week-product__title {
+  @include mishki-title;
+}
+
+.week-product__label {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $mishka-main;
+}
+
+.week-product__about {
+  margin: 0;
+
+  line-height: 24px;
+  color: $mishka-button;
+}
+
+.week-product__list {
+  line-height: 20px;
+  color: $mishka-button;
+}
+
+.week-product__description {
+  margin: 0;
+}
+
+.week-product__image-container {
+  width: 260px;
+  height: 315px;
+}
+
+.week-product__price {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: $mishka-button;
+}

@@ -1,0 +1,56 @@
+.review__title {
+  @include mishki-title;
+}
+
+.review__list {
+  @include list-style-zero;
+}
+
+.review__quotation {
+  margin: 0;
+}
+
+.review__description {
+  margin: 0;
+}
+
+.review__citation {
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.review__social-link {
+  margin: 0;
+  font-size: 17px;
+}
+
+.review__toggle {
+  font: inherit;
+  width: 130px;
+  height: 52px;
+
+  background-color: $bcg-color;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 50px 26px;
+
+  &--previous {
+    background-image: url("../../img/icon-left-arrow.svg");
+  }
+
+  &--next {
+    background-image: url("../../img/icon-right-arrow.svg");
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

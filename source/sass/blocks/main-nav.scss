@@ -1,0 +1,42 @@
+.main-nav {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.main-nav__close {
+  transform: scale(0);
+}
+
+.main-nav__toggle {
+  padding: 0;
+
+  border: none;
+  background-color: $bcg-color;
+  &--active {
+    & .main-nav__close {
+      transform: scale(1);
+    }
+    & .main-nav__burger {
+      transform: scale(0);
+    }
+  }
+}
+
+.main-nav__list {
+  @include list-style-zero;
+
+  padding-left: 45px;
+
+  text-align: left;
+}
+
+.main-nav__features {
+  display: none;
+
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $mishka-button;
+}

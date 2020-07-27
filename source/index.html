@@ -2,44 +2,58 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="page">
     <header class="page-header">
-      <nav class="main-nav">
-        <a class="page-header__logo logo">
-          <img class="logo--mobile-type" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
-          <img class="logo--tablet-type" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
-          <img class="logo--desktop-type" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--catalog">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item site-list__item--bind">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list shopping-list">
-          <li class="shopping-list__item shopping-list__item--search">
-            <form class="shopping-list__form" action="https://echo.htmlacademy.ru" method="GET">
-              <label class="visually-hidden" for="header-search">Поиск по сайту</label>
-              <input class="main-nav__search shopping-list__search" id="header-search" type="search" placeholder="Поиск по сайту">
-            </form>
-          </li>
-          <li class="shopping-list__item">
-            <a class="shopping-list__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list catalog-nav-list">
-          <li class="catalog-nav-list__item catalog-nav-list__item--new"><a class="catalog-nav-list__link" href="#">Новые поступления</a></li>
-          <li class="catalog-nav-list__item catalog-nav-list__item--sale"><a class="catalog-nav-list__link" href="#">Распродажа</a></li>
-        </ul>
-        <p class="features-list__link">Бесплатная доставка по России</p>
-      </nav>
+      <div class="header-inner container">
+        <nav class="main-nav">
+          <div class="main-nav__menu">
+            <a class="main-nav__logo logo">
+              <svg class="logo--mobile-type" width="86" height="35">
+                <use xlink:href="#mishka-logo-mobile"></use>
+              </svg>
+              <img class="logo--tablet-type" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
+              <img class="logo--desktop-type" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
+            </a>
+            <button class="main-nav__toggle" type="button">
+              <svg class="main-nav__burger" width="20" height="14">
+                <use xlink:href="#menu-burger"></use>
+              </svg>
+              <svg class="main-nav__close" width="20" height="14">
+                <use xlink:href="#menu-close"></use>
+              </svg>
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--catalog">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item site-list__item--bind">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list shopping-list">
+            <li class="shopping-list__item shopping-list__item--search">
+              <form class="shopping-list__form" action="https://echo.htmlacademy.ru" method="GET">
+                <label class="visually-hidden" for="header-search">Поиск по сайту</label>
+                <input class="main-nav__search shopping-list__search" id="header-search" type="search" placeholder="Поиск по сайту">
+              </form>
+            </li>
+            <li class="shopping-list__item">
+              <a class="shopping-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list catalog-nav-list">
+            <li class="catalog-nav-list__item catalog-nav-list__item--new"><a class="catalog-nav-list__link" href="#">Новые поступления</a></li>
+            <li class="catalog-nav-list__item catalog-nav-list__item--sale"><a class="catalog-nav-list__link" href="#">Распродажа</a></li>
+          </ul>
+          <p class="main-nav__features">Бесплатная доставка по России</p>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
@@ -47,16 +61,16 @@
       <section class="products">
         <div class="products__inner container">
           <h2 class="visually-hidden">Наши товары</h2>
-          <b class="products__slogan">Милые штуки ручной работы для дома</b>
-          <ul class="products__list">
-            <li class="products__item products__item--interior-item">
-              <a class="products__link" href="#">Предметы интерьера</a>
-            </li>
-            <li class="products__item products__item--toys">
-              <a class="products__link" href="#">Детские игрушки</a>
-            </li>
-          </ul>
-        </div>
+          <p class="products__slogan">Милые штуки ручной работы для дома</p>
+          </div>
+        <ul class="products__list">
+          <li class="products__item products__item--interior">
+            <a class="products__link" href="#">Предметы интерьера</a>
+          </li>
+          <li class="products__item products__item--toys">
+            <a class="products__link" href="#">Детские игрушки</a>
+          </li>
+        </ul>
       </section>
       <section class="week-product">
         <div class="week-product__inner container">
@@ -78,7 +92,7 @@
             </div>
           </dl>
           <div class="week-product__image-container">
-            <img class="week-product__image" src="https://via.placeholder.com/162x100" width="162" height="100" alt="Вязанная корзинка цвета «Тиффани»/серый">
+            <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанная корзинка цвета «Тиффани»/серый">
           </div>
           <p class="week-product__price">Цена: 990 руб.</p>
           <a class="button week-product__button js-order" href="#">Заказать</a>
@@ -137,9 +151,9 @@
             </div>
           </dl>
           <div class="contacts__map-wrapper">
-            <img class="contacts__map" src="https://via.placeholder.com/183x180" width="183" height="180" alt="Карта расположения офиса: г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101">
+            <img class="contacts__map" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Карта расположения офиса: г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101">
           </div>
-          <a class="botton contacts__button" href="#">Напишите нам</a>
+          <a class="button contacts__button" href="#">Напишите нам</a>
         </div>
       </section>
     </main>
@@ -169,7 +183,11 @@
       </section>
       <section class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <svg class="copyright__logo" width="27" height="34">
+            <use xlink:href="#logo-htmlacademy"></use>
+          </svg>
+        </a>
       </section>
     </footer>
     <section class="cart-modal">
@@ -191,5 +209,21 @@
         <button class="button cart-modal__button" type="submit">Добавить</button>
       </form>
     </section>
+    <svg width="0" height="0" class="hidden">
+      <symbol fill="none" xmlns="http://www.w3.org/2000/svg" id="mishka-logo-mobile">
+        <path d="M4.547 26.319c0-3.5-.3-6.9-.4-10.4v-1c0 .1.1.2.1.4.5 1.4 1.1 2.7 1.8 3.9.7 1.2 1.1 2.6 1.5 3.9-.2.2-.3.4-.2.6 0 .2.1.2.2.3.5.5 1.5.2 2.1 0 .2-.1.5-.2.7-.4.3-.2.7-.6.6-1 0-.1 0-.2-.1-.2.4-1.1.6-2.2.8-3.3.2-1.2.7-2.3 1.1-3.5 0 .5.1 1 .1 1.6.2 2.1 0 4.3 0 6.4 0 .7 0 1.4.2 2.1.1.3.3 1.5.2 1.6-.5.5-.4 1.1.3 1.2.8.2 1.8-.1 2.3-.6 1-.9.5-2.4.3-3.6-.4-2 .1-4.2 0-6.2-.1-2.3-.4-4.5-.4-6.8 0-1.8.3-3.7-.3-5.5 0-.2.1-.4.1-.6.2-.9-2.8-.4-3.2.4-.3.2-.4.5-.3.8 0 .1.1.1.1.2-.6 2.7-1.3 5.3-2.2 7.9-.3 1-.7 2-1.1 3-.5-.9-1-1.9-1.4-2.8-1.2-2.9-2.2-5.8-3.6-8.6.2-1.3-2.7-1.2-3.3 0-.7 1.4-.6 2.9-.4 4.4.3 1.7.3 3.4.3 5.1 0 3.3.3 6.7.4 10-.3.3-.4.7-.1 1.2.1.2.3.3.5.5 1.2.7 3.3.2 3.3-1zm18.2-18.4c-.1-.6-3.4.1-3.3.9.3 1.8.2 3.6.1 5.4 0 1.7.4 3.3.6 5 .2 1.7-.1 3.5.1 5.2.1.8.6 2.3.1 3-.4.4 1.2.3 1.3.3.6-.1 1.5-.3 1.9-.9.6-.7.2-2 0-2.8-.3-1.7-.1-3.5-.2-5.3-.1-1.7-.6-3.3-.7-4.9.3-2 .4-3.9.1-5.9zm3.2 6.7c.9 2.5 4.6 1.3 6.6 1.5 3.2.2 2.3 4.6 2.3 6.6 0 1.1 1 2.9.2 3.8-.5.6-1.7.6-2.4.6-.7.1-1.9.3-2.3-.4-.8-1.2.1-3.2-.1-4.6-.1-.8-3.4-.1-3.3.9.3 2.2-1.2 5.2 2 5.6 2.1.2 4.4-.1 6.3-.8 1-.3 1.9-.8 2.7-1.5.9-.8.6-2 .4-3-.6-2.5.6-5.3-1-7.5-1.7-2.3-5-.7-7.2-1.3-1.2-.2-1.2-1.8-1.2-2.8 0-1.2-.1-2.3-.2-3.5-.1-.9 0-1.8.6-2.4.1-.1.7-.3.7-.3.3-.1.6-.1.9-.1 1.3-.1 3.9.2 3.4 2.1-.2.9 3 .4 3.3-.5 1-3.9-6.1-3.1-8.2-2.6-1.9.5-3.9 1.6-4 3.7-.1 1 .2 2 .3 3 0 1.2-.3 2.4.2 3.5zm14.4 1.9c-.1 1.8-.2 3.6-.2 5.4 0 .9.1 1.8.3 2.8.1.8.4 2 .2 2.8-.2.6 3 .2 3.3-.6.5-1.5-.2-3.4-.3-4.9-.1-1.5 0-2.9.1-4.4 1.7-.1 3.4-.2 5.1 0 .1 1.2.2 2.3.3 3.5.1 1 .2 1.9.2 2.9 0 .9.1 2.1-.2 2.9-.7 1.7 2.7 1.6 3.1.3.6-1.6.4-3.5.3-5.2-.3-2.2-.6-4.2-.6-6.3-.1-3.2-.6-6.3-.6-9.5 0-1.7-3.3-1.1-3.3.3 0 3 .4 6 .6 9.1v.2c-1.6 0-3.3.1-4.9.2.2-3.9-.5-7.8-.4-11.7 0-.5-3.3-.1-3.3.9-.2 3.8.4 7.5.3 11.3zm14.1 5.3c-.3.3-.2.4 0 .5 0 1.5 0 2.9-.2 4.4-.4.6.4 1 .9 1h.1c.6 0 2.2-.3 2.3-1.1.2-1.8.2-3.5.2-5.3 1.3-1.4 2.4-3.1 3.4-4.7.6 1.2 1.2 2.5 1.7 3.9.7 2.3 1.9 4.4 2.6 6.8.5 1.5 3.8.6 3.3-.9-.7-2.3-1.9-4.5-2.6-6.8-.8-2.3-2-4.4-3-6.6.8-1.6 1.7-3.3 2.5-5 .7-1.5 1.2-3.2 2.6-4.3.5-.4.5-.8-.2-.8-.7-.1-1.7.2-2.3.6-1.3 1-2 2.2-2.7 3.6-.8 1.7-1.6 3.4-2.5 5.1-.1.1-.1.2-.2.4-.4.3-.7.6-.5 1.1-.7 1.3-1.3 2.6-2.1 3.9-.3-4.7-.8-9.3-1-14 0-1.1-3.3-.4-3.3.9.2 5.7 1 11.5 1 17.3zm31.5-6.2c-.2-.7-1.2-.7-1.9-.6v-.8c-.1-2.2-.1-4.5-.3-6.8-.2-2.1-1.3-2.8-3.3-2.7-2 .1-4.4.4-6.3 1.2-2.2.9-3.4 2.5-3.8 4.8-.5 2.5.2 5.2.3 7.8.1 3 .1 5.9.1 8.9 0 .5 3.3 0 3.3-.9v-7c0-.7 0-1.4-.1-2.1 1.2-.5 3.1 0 4.3.1.9.1 1.8-.1 2.7-.2 0 1.9.1 3.9.2 5.9 0 1 .4 3-.3 3.8-.4.4 1.2.3 1.3.3.7-.1 1.5-.3 1.9-.9.8-.9.4-3.2.3-4.3-.1-1.6-.1-3.2-.1-4.8.8-.4 1.9-1 1.7-1.7zm-6.6-.2c-1.9 0-3.8-.3-5.7 0-.1-1.1-.2-2.1-.3-3.2-.1-2 .1-4.7 1.9-5.9.5-.3 1.4-.3 2-.4.8-.1 1.6-.3 2.4.2 1 .7.8 3.1.8 4.1 0 1.7.2 3.4.3 5.1-.5.1-1 .1-1.4.1zm-60.2-11.3c0 .2 0 .4.1.5v.4c.1.2.2.3.4.4.3.2.7.2 1.1.2.4 0 .9-.2 1.2-.4l.2-.2c.4-.3.8-.7.6-1.1-.4-.9-.4-1.9-.3-2.9 0-.8-.8-1.1-1.5-1-.6.1-1.8.5-1.8 1.3s-.1 1.7.1 2.5c-.1.1-.1.2-.1.3zm61.5 29.2c-1.6-.6-3.3-.6-4.9-.8-1.6-.2-3.2-.4-4.9-.6-1.6.1-3.3 0-5 .1l-4.9.3c-6.5.3-13 .3-19.5.1-6.5-.1-13-.5-19.6-.5-3.3 0-6.6.1-9.9.3-1.6.3-3.2.5-4.9.9-1.6.4-3.1.9-4.8 1 1.6.4 3.3.3 5 .3 1.6 0 3.2.1 4.9.2 3.2-.2 6.5-.2 9.7-.3 6.5 0 13 .3 19.6.5 6.5.1 13.1.2 19.7-.1l4.9-.3c1.6-.1 3.2-.1 4.8-.1 1.6-.1 3.3-.3 4.9-.5 1.7-.2 3.2-.6 4.9-.5h.1v-.6c0 .4 0 .5-.1.6z"
+          fill="currentColor"></path>
+      </symbol>
+      <symbol fill="none" xmlns="http://www.w3.org/2000/svg" id="menu-burger">
+        <path d="M20 0H0v2h20V0zm0 6H0v2h20V6zm0 6H0v2h20v-2z" fill="#231F20"></path>
+      </symbol>
+      <symbol viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="menu-close">
+        <path d="M21 1.366L19.566 0 10.55 8.585 1.434 0 0 1.366l9.015 8.683L0 18.634 1.434 20l9.117-8.585L19.566 20 21 18.634l-9.015-8.585L21 1.366z" fill="#000"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 34" id="logo-htmlacademy">
+        <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"
+        fill="currentColor"></path>
+      </symbol>
+    </svg>
   </body>
 </html>

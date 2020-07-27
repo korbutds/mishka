@@ -1,0 +1,23 @@
+.copyright__text {
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
+.copyright__link {
+  display: block;
+  width: 27px;
+  height: 25px;
+
+  font-size: 0;
+  color: $mishka-main;
+
+  &:hover,
+  &:focus {
+    color: $mishka-main-dark;
+  }
+
+  &:active {
+    color: rgba($color: $mishka-main-dark, $alpha: 0.3);
+  }
+}

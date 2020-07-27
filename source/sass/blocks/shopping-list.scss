@@ -1,0 +1,14 @@
+.shopping-list__search {
+  padding: 0;
+
+  font: inherit;
+
+  border: none;
+  &::placeholder {
+    color: $text-color;
+  }
+}
+
+.shopping-list__link {
+  @include link-behavior;
+}
