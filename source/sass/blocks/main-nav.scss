@@ -14,10 +14,12 @@
 
   border: none;
   background-color: $bcg-color;
+
   &--active {
     & .main-nav__close {
       transform: scale(1);
     }
+
     & .main-nav__burger {
       transform: scale(0);
     }
@@ -26,7 +28,6 @@
 
 .main-nav__list {
   @include list-style-zero;
-
   padding-left: 45px;
 
   text-align: left;

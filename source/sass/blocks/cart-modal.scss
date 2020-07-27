@@ -1,0 +1,43 @@
+.cart-modal__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cart-modal__legend {
+  color: $mishka-button;
+}
+
+.cart-modal__label {
+  display: block;
+  width: 82px;
+  height: 16px;
+  padding: 18px;
+
+  color: $mishka-button;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: 2px solid rgba($color: $mishka-button, $alpha: 0.1);
+}
+
+.cart-modal__checkbox:checked ~ .cart-modal__label {
+  border: 2px solid $mishka-main;
+}
+
+.cart-modal__button {
+  color: $bcg-color;
+
+  background-color: $mishka-main;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $mishka-main-dark;
+  }
+}

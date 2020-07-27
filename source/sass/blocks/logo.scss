@@ -2,8 +2,10 @@
   &--tablet-type {
     display: none;
   }
+
   &--desktop-type {
     display: none;
   }
-    @include link-behavior;
+
+  @include link-behavior;
 }

@@ -17,8 +17,9 @@
 
   &:hover,
   &:focus {
-    background-color: $mishka-button;
     color: $bcg-color;
+
+    background-color: $mishka-button;
   }
 
   &:active {
