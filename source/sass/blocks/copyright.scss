@@ -1,4 +1,6 @@
 .copyright__text {
+  margin: 0;
+
   font-size: 19px;
   line-height: 19px;
   font-weight: 700;
@@ -7,9 +9,8 @@
 .copyright__link {
   display: block;
   width: 27px;
-  height: 25px;
+  height: 34px;
 
-  font-size: 0;
   color: $mishka-main;
 
   &:hover,

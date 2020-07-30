@@ -3,7 +3,8 @@
 
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 320px auto;
+  background-size: 170%;
+  background-position: center 0;
 }
 
 .products__slogan {
@@ -16,15 +17,14 @@
 }
 
 .products__list {
-  @include list-style-zero;
+  @include list-reset;
 }
 
 .products__link {
   display: block;
   width: auto;
-  min-height: 79px;
+  min-height: 103px;
   padding-top: 24px;
-  padding-left: 30px;
   padding-right: 160px;
 
   text-decoration: none;

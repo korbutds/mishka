@@ -1,9 +1,5 @@
-.about-us__title {
-  @include mishki-title;
-}
-
 .about-us__list {
-  @include list-style-zero;
+  @include list-reset;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;

@@ -1,0 +1,18 @@
+.menu-toggle {
+  position: absolute;
+  right: 30px;
+  top: 40px;
+  transform: translateY(-50%);
+
+  &__close {
+    display: none;
+  }
+
+  &--active &__open {
+    display: none;
+  }
+
+  &--active &__close {
+    display: block;
+  }
+}

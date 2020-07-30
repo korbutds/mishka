@@ -12,15 +12,8 @@
   }
 }
 
-@mixin list-style-zero {
+@mixin list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-@mixin mishki-title {
-  margin: 0;
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: 700;
 }

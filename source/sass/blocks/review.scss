@@ -1,9 +1,5 @@
-.review__title {
-  @include mishki-title;
-}
-
 .review__list {
-  @include list-style-zero;
+  @include list-reset;
 }
 
 .review__quotation {
