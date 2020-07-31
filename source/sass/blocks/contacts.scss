@@ -1,16 +1,29 @@
+.contacts {
+  padding-top: 39px;
+}
+
 .contacts__title {
   margin: 0;
+  margin-bottom: 27px;
 
   font-size: 18px;
   font-weight: 700;
 }
 
 .contacts-list {
+  display: flex;
+  flex-direction: column;
   color: $mishka-button;
+}
+
+.contacts__item {
+  display: flex;
+  margin-bottom: 30px;
 }
 
 .contacts__property {
   margin: 0;
+  flex-basis: 90px;
 }
 
 .contacts__e-mail {
