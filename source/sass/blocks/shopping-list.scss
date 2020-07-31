@@ -1,7 +1,11 @@
-.shopping-list__search {
+.shopping-list__label {
+  display: block;
   padding-top: 27px;
   padding-bottom: 26px;
+  padding-left: 76px;
+}
 
+.shopping-list__search {
   font: inherit;
 
   border: none;
@@ -15,16 +19,13 @@
   display: block;
   padding-top: 29px;
   padding-bottom: 26px;
+  padding-left: 76px;
 
   @include link-behavior;
 }
 
 .shopping-list__item {
   position: relative;
-
-  &--search {
-    padding-top: 2px;
-  }
 
   &:hover .shopping-list__icon,
   &:focus .shopping-list__icon {

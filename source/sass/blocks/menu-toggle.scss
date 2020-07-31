@@ -1,18 +1,17 @@
 .menu-toggle {
-  position: absolute;
-  right: 30px;
-  top: 40px;
-  transform: translateY(-50%);
+  width: 20px;
+  height: 14px;
 
-  &__close {
-    display: none;
-  }
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 14px;
+  background-position: center;
 
-  &--active &__open {
-    display: none;
-  }
+  &--active {
+    width: 21px;
+    height: 20px;
 
-  &--active &__close {
-    display: block;
+    background-image: url("../img/icon-menu-close.svg");
+    background-size: 21px 20px;
   }
 }
