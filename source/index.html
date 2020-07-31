@@ -221,21 +221,23 @@
     </footer>
     <section class="cart-modal">
       <div class="cart-modal__inner container">
-        <h2 class="cart-modal__title">Добавить в корзину</h2>
+        <h2 class="cart-modal__title">Добавить в&nbsp;корзину</h2>
         <form class="cart-modal__form" action="POST" action="https://echo.htmlacademy.ru">
           <p class="cart-modal__legend">Выберите размер:</p>
-          <p class="cart-modal__label-wrapper">
-            <input class="visually-hidden cart-modal__checkbox" type="radio" id="cart-modal__size-s" value="S-size" name="cart-modal__size" checked>
-            <label class="cart-modal__label" for="cart-modal__size-s">S</label>
-          </p>
-          <p class="cart-modal__label-wrapper">
-            <input class="visually-hidden cart-modal__checkbox" type="radio" id="cart-modal__size-m" value="M-size" name="cart-modal__size">
-            <label class="cart-modal__label" for="cart-modal__size-m">M</label>
-          </p>
-          <p class="cart-modal__label-wrapper">
-            <input class="visually-hidden cart-modal__checkbox" type="radio" id="cart-modal__size-l" value="L-size" name="cart-modal__size">
-            <label class="cart-modal__label" for="cart-modal__size-l">L</label>
-          </p>
+          <div class="cart-modal__size">
+            <p class="cart-modal__label-wrapper">
+              <input class="visually-hidden cart-modal__checkbox" type="radio" id="cart-modal__size-s" value="S-size" name="cart-modal__size" checked>
+              <label class="cart-modal__label" for="cart-modal__size-s">S</label>
+            </p>
+            <p class="cart-modal__label-wrapper">
+              <input class="visually-hidden cart-modal__checkbox" type="radio" id="cart-modal__size-m" value="M-size" name="cart-modal__size">
+              <label class="cart-modal__label" for="cart-modal__size-m">M</label>
+            </p>
+            <p class="cart-modal__label-wrapper">
+              <input class="visually-hidden cart-modal__checkbox" type="radio" id="cart-modal__size-l" value="L-size" name="cart-modal__size">
+              <label class="cart-modal__label" for="cart-modal__size-l">L</label>
+            </p>
+          </div>
           <button class="button cart-modal__button" type="submit">Добавить</button>
         </form>
       </div>

@@ -20,4 +20,8 @@
   &:focus {
     color: $mishka-main-dark;
   }
+
+  &:active {
+    opacity: 30%;
+  }
 }

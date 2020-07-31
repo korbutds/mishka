@@ -1,4 +1,12 @@
+.cart-modal {
+  padding-top: 30px;
+  padding-bottom: 46px;
+}
+
 .cart-modal__title {
+  margin: 0;
+  margin-bottom: 14px;
+
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -6,8 +14,16 @@
   text-align: center;
 }
 
+.cart-modal__size {
+  display: flex;
+  justify-content: space-between;
+}
+
 .cart-modal__legend {
+  margin-bottom: 21px;
+
   color: $mishka-button;
+  text-align: center;
 }
 
 .cart-modal__label {
