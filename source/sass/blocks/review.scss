@@ -1,5 +1,16 @@
+.review {
+  padding-bottom: 45px;
+
+  border-bottom: 6px solid $mishka-shadow;
+}
+
+.review__title {
+  margin-bottom: 14px;
+}
+
 .review__list {
   @include list-reset;
+  margin-bottom: 30px;
 }
 
 .review__quotation {
@@ -8,6 +19,9 @@
 
 .review__description {
   margin: 0;
+  margin-bottom: 29px;
+
+  line-height: 31px;
 }
 
 .review__citation {
@@ -22,18 +36,26 @@
   font-size: 17px;
 }
 
+.review__toggles {
+  display: flex;
+  margin-bottom: 36px;
+}
+
 .review__toggle {
+  flex-grow: 1;
+
   font: inherit;
   width: 130px;
   height: 52px;
 
   background-color: $bcg-color;
-  border: none;
+  border: 1px solid $mishka-shadow;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 50px 26px;
 
   &--previous {
+    border-right: none;
     background-image: url("../../img/icon-left-arrow.svg");
   }
 
