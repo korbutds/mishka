@@ -51,10 +51,16 @@
               <form class="shopping-list__form" action="https://echo.htmlacademy.ru" method="GET">
                 <label class="visually-hidden" for="header-search">Поиск по сайту</label>
                 <input class="main-nav__search shopping-list__search" id="header-search" type="search" placeholder="Поиск по сайту">
+                <svg class="shopping-list__icon shopping-list__icon--search" width="18" height="18">
+                  <use xlink:href="#icon-search"></use>
+                </svg>
               </form>
             </li>
             <li class="main-nav__item shopping-list__item container">
               <a class="shopping-list__link" href="#">Корзина: пока пуста</a>
+              <svg class="shopping-list__icon shopping-list__icon--cart" width="21" height="18">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
             </li>
           </ul>
           <ul class="main-nav__list catalog-nav-list">
@@ -71,21 +77,21 @@
       <section class="products">
         <div class="products__inner container">
           <h2 class="visually-hidden">Наши товары</h2>
-          <p class="products__slogan">Милые штуки ручной работы для дома</p>
+          <p class="products__slogan">Милые штуки ручной<br>работы для дома</p>
         </div>
         <ul class="products__list">
           <li class="products__item products__item--interior container">
-            <a class="products__link" href="#">Предметы интерьера</a>
+            <a class="products__link products__link--interior" href="#">Предметы интерьера</a>
           </li>
           <li class="products__item products__item--toys container">
-            <a class="products__link" href="#">Детские игрушки</a>
+            <a class="products__link products__link--toys" href="#">Детские игрушки</a>
           </li>
         </ul>
       </section>
       <section class="week-product">
         <div class="week-product__inner container">
           <h2 class="week-product__title section-title">Вязаные корзинки</h2>
-          <span class="week-product__label">Товар недели</span>
+          <p class="week-product__label">Товар недели</p>
           <p class="week-product__about">Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести расцветках, и&nbsp;трех размерах.</p>
           <dl class="week-product__list">
             <div class="week-product__item">
@@ -252,6 +258,12 @@
       </symbol>
       <symbol viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="menu-close">
         <path d="M21 1.366L19.566 0 10.55 8.585 1.434 0 0 1.366l9.015 8.683L0 18.634 1.434 20l9.117-8.585L19.566 20 21 18.634l-9.015-8.585L21 1.366z" fill="#000"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="-0.8 -0.8 17.6 17.6" id="icon-search">
+        <path fill="currentColor" d="M16.47 14.93l-3.415-3.415A7.67 7.67 0 0 0 14.6 6.899C14.6 2.646 11.153-.8 6.9-.8S-.8 2.646-.8 6.899s3.446 7.7 7.699 7.7c1.734 0 3.326-.58 4.613-1.546l3.417 3.416c.203.202.418.33.771.33a1.1 1.1 0 0 0 1.1-1.1c0-.24-.061-.499-.33-.769zM1.399 6.899a5.5 5.5 0 1 1 11 0c0 3.038-2.462 5.5-5.5 5.5s-5.5-2.461-5.5-5.5z"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="264.205 370.961 20.294 18.849" id="icon-cart">
+        <path fill="currentColor" d="M283.75 378.19h-3.151l-3.407-6.814a.75.75 0 1 0-1.341.671l3.071 6.143h-9.138l3.072-6.143a.75.75 0 0 0-1.341-.671l-3.407 6.814h-3.151a.75.75 0 0 0 0 1.5h.157l.855 2.991a.737.737 0 0 0-.316.595c0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795a.745.745 0 0 0 .698-.739.738.738 0 0 0-.316-.596l.854-2.991h.157a.75.75 0 1 0-.002-1.499zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"></path>
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 34" id="logo-htmlacademy">
         <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"

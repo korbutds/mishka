@@ -1,3 +1,7 @@
 .site-list__link {
+  display: block;
+  padding-top: 29px;
+  padding-bottom: 26px;
+
   @include link-behavior;
 }

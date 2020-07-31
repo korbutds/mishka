@@ -1,4 +1,15 @@
+.week-product {
+  padding-top: 31px;
+}
+
+.week-product__title {
+  margin-bottom: 4px;
+}
+
 .week-product__label {
+  margin: 0;
+  margin-bottom: 17px;
+
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -8,12 +19,16 @@
 
 .week-product__about {
   margin: 0;
+  margin-bottom: 20px;
 
   line-height: 24px;
   color: $mishka-button;
 }
 
 .week-product__list {
+  display: flex;
+  flex-direction: column;
+
   line-height: 20px;
   color: $mishka-button;
 }
@@ -35,4 +50,16 @@
   font-weight: 700;
   text-align: center;
   color: $mishka-button;
+}
+
+.week-product__item {
+  display: flex;
+  padding-top: 9px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid $mishka-shadow;
+}
+
+.week-product__property {
+  flex-basis: 97px;
 }
