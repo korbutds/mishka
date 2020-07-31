@@ -1,5 +1,12 @@
+.copyright {
+  padding: 22px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .copyright__text {
   margin: 0;
+  align-self: center;
 
   font-size: 19px;
   line-height: 19px;

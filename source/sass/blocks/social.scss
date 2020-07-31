@@ -7,12 +7,17 @@
   border-bottom: 1px solid $mishka-shadow;
 }
 
+.social__item {
+  align-self: center;
+}
+
 .social__link {
   display: flex;
   flex-direction: column;
-}
-
-.social__item {
-  align-self: center;
   color: $text-color;
+
+  &:hover,
+  &:focus {
+    color: $mishka-main-dark;
+  }
 }
