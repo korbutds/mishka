@@ -1,5 +1,6 @@
 .week-product {
   padding-top: 31px;
+  padding-bottom: 36px;
 }
 
 .week-product__title {
@@ -28,6 +29,7 @@
 .week-product__list {
   display: flex;
   flex-direction: column;
+  margin-bottom: 28px;
 
   line-height: 20px;
   color: $mishka-button;
@@ -40,10 +42,12 @@
 .week-product__image-container {
   width: 260px;
   height: 315px;
+  margin-bottom: 26px;
 }
 
 .week-product__price {
   margin: 0;
+  margin-bottom: 26px;
 
   font-size: 17px;
   line-height: 24px;
