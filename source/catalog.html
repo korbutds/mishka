@@ -62,16 +62,16 @@
       </div>
     </header>
 
-    <main class="page-main">
-      <h1 class="page-main__title">Каталог товаров</h1>
-      <section class="catalog">
+    <main class="page-main catalog">
+      <h1 class="page-main__title catalog__title">Каталог товаров</h1>
+      <section class="catalog__section container">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
             <div class="catalog__description">
               <a class="catalog__link" href="#">
                 <div class="catalog__image-container">
-                  <img class="catalog__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Изображения игрушки Зайчик-попрыгайчик">
+                  <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Изображения игрушки Зайчик-попрыгайчик">
                 </div>
                 <h3 class="catalog__name">Зайчик-попрыгайчик</h3>
               </a>
@@ -82,20 +82,24 @@
                 </div>
                 <div class="catalog__information-item">
                   <dt class="catalog__information-property">вес</dt>
-                  <dd class="catalog__information-value">200 гр</dd>
+                  <dd class="catalog__information-value">200 г</dd>
                 </div>
               </dl>
             </div>
             <div class="catalog__order">
-              <p class="catalog__cost">1200 руб.</p>
-              <a class="catalog__to-basket js-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+              <p class="catalog__cost">1 200 руб.</p>
+              <a class="catalog__to-basket js-cart" href="#">
+                <svg class="catalog__icon" width="21" height="18">
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </a>
             </div>
           </li>
           <li class="catalog__item">
             <div class="catalog__description">
               <a class="catalog__link" href="#">
                 <div class="catalog__image-container">
-                  <img class="catalog__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Изображения корзинки для белья">
+                  <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Изображения корзинки для белья">
                 </div>
                 <h3 class="catalog__name">Корзинка для белья</h3>
               </a>
@@ -112,14 +116,18 @@
             </div>
             <div class="catalog__order">
               <p class="catalog__cost">690 руб.</p>
-              <a class="catalog__to-basket js-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+              <a class="catalog__to-basket js-cart" href="#">
+                <svg class="catalog__icon" width="21" height="18">
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </>
             </div>
           </li>
           <li class="catalog__item">
             <div class="catalog__description">
               <a class="catalog__link" href="#">
                 <div class="catalog__image-container">
-                  <img class="catalog__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Изображения юольшой корзинки для игрушек">
+                  <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Изображения юольшой корзинки для игрушек">
                 </div>
                 <h3 class="catalog__name">Большая корзинка для игрушек</h3>
               </a>
@@ -135,8 +143,12 @@
               </dl>
             </div>
             <div class="catalog__order">
-              <p class="catalog__cost">1500 руб.</p>
-              <a class="catalog__to-basket js-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+              <p class="catalog__cost">1 500 руб.</p>
+              <a class="catalog__to-basket js-cart" href="#">
+                <svg class="catalog__icon" width="21" height="18">
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </a>
             </div>
           </li>
         </ul>
