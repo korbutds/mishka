@@ -27,7 +27,8 @@
 
 .contacts__property {
   margin: 0;
-  flex-basis: 90px;
+  flex-basis: 76px;
+  flex-shrink: 0;
 }
 
 .contacts__e-mail {
