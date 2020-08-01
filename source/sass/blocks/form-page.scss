@@ -1,3 +1,7 @@
+.form-page {
+  margin-bottom: 56px;
+}
+
 .form-page__title {
   margin: 0 auto;
   padding-top: 73px;
@@ -32,6 +36,21 @@
 
   border: none;
   border-top: 1px solid $mishka-main;
+
+  &--fio {
+    margin-bottom: 20px;
+  }
+
+  &--tel,
+  &--email {
+    padding-top: 18px;
+    margin-bottom: 19px;
+  }
+
+  &:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 6px;
+  }
 }
 
 .form-page__legend {
@@ -64,6 +83,11 @@
   line-height: 18px;
   font-weight: 700;
 
+  &--fio {
+    min-height: auto;
+    padding-top: 10px;
+  }
+
   &--radio {
     padding: 13px;
     padding-left: 62px;
@@ -84,7 +108,7 @@
   }
 
   &--checkbox {
-    padding: 12px;
+    padding: 13px;
     padding-left: 62px;
 
     &::before {
@@ -100,33 +124,126 @@
       border: 2px solid $mishka-button;
     }
   }
+
+  &:hover::before {
+    border-color: $mishka-main;
+  }
 }
 
-.form-page__radio:checked ~ .form-page__label::after {
-  content: "";
-  position: absolute;
-  top: 14px;
-  left: 12px;
+.form-page__radio {
+  &:checked ~ .form-page__label::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 12px;
 
-  display: block;
-  width: 16px;
-  height: 16px;
+    display: block;
+    width: 16px;
+    height: 16px;
 
-  background-color: $mishka-main;
-  border-radius: 50%;
+    background-color: $mishka-main;
+    border-radius: 50%;
+  }
+
+  &:disabled ~ .form-page__label {
+    opacity: 0.2;
+    color: $mishka-button;
+
+    &:hover::before {
+      border-color: $mishka-button;
+    }
+  }
 }
 
-.form-page__box:checked ~ .form-page__label::after {
-  content: "";
+.form-page__box {
+  &:checked ~ .form-page__label::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 9px;
+
+    display: block;
+    width: 22px;
+    height: 16px;
+
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 16px;
+  }
+
+  &:disabled ~ .form-page__label {
+    opacity: 0.2;
+    color: $mishka-button;
+
+    &:hover::before {
+      border-color: $mishka-button;
+    }
+  }
+}
+
+.form-page__input-wrapper {
+  margin: 0;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-page__input {
+  position: relative;
+
+  padding: 15px 0;
+  padding-right: 40px;
+  width: 100%;
+
+  font: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+  border-bottom: 2px solid $mishka-button;
+
+  &::placeholder {
+    color: rgba($color: $text-color, $alpha: 0.3);
+  }
+
+  &--add {
+    padding: 18px 14px;
+
+    border: 2px solid $mishka-button;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $mishka-main;
+  }
+
+  &:hover ~ .form-page__input-image,
+  &:focus ~ .form-page__input-image,
+  &:active ~ .form-page__input-image {
+    color: $mishka-main;
+  }
+}
+
+.form-page__input-image {
   position: absolute;
-  top: 14px;
-  left: 9px;
+  top: 25px;
+  right: 6px;
 
+  color: rgba($color: $text-color, $alpha: 0.3);
+}
+
+.form-page__attention {
   display: block;
-  width: 22px;
-  height: 16px;
+  margin-bottom: 30px;
 
-  background-image: url("../img/icon-tick.svg");
-  background-repeat: no-repeat;
-  background-size: 22px 16px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form-page__submit {
+  width: 100%;
 }
