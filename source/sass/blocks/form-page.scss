@@ -27,8 +27,8 @@
 .form-page__fieldset {
   position: relative;
 
-  padding: 0;
   margin: 0;
+  padding: 42px 0 26px;
 
   border: none;
   border-top: 1px solid $mishka-main;
@@ -39,7 +39,7 @@
   top: -10px;
 
   margin: 0;
-  padding-right: 10px;
+  padding-right: 25px;
 
   font-size: 17px;
   line-height: 1;
@@ -48,4 +48,54 @@
   color: $mishka-main;
 
   background-color: $bcg-color;
+}
+
+.form-page__label-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-page__label {
+  position: relative;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+
+  &--radio {
+    padding-left: 62px;
+    margin-bottom: 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: -12px;
+
+      display: block;
+      width: 42px;
+      height: 42px;
+
+      border: 2px solid $mishka-button;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 11px;
+
+      display: none;
+      width: 18px;
+      height: 18px;
+
+      background-color: $mishka-main;
+      border-radius: 50%;
+    }
+  }
+}
+
+.form-page__box:checked ~ .form-page__label::after {
+  display: block;
 }
