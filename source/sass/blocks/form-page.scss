@@ -28,7 +28,7 @@
   position: relative;
 
   margin: 0;
-  padding: 42px 0 26px;
+  padding: 29px 0 20px;
 
   border: none;
   border-top: 1px solid $mishka-main;
@@ -57,45 +57,76 @@
 
 .form-page__label {
   position: relative;
+  display: block;
+  min-height: 61px;
 
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
 
   &--radio {
+    padding: 13px;
     padding-left: 62px;
-    margin-bottom: 25px;
 
     &::before {
       content: "";
       position: absolute;
       left: -1px;
-      top: -12px;
+      top: 2px;
 
       display: block;
-      width: 42px;
-      height: 42px;
+      width: 40px;
+      height: 40px;
 
       border: 2px solid $mishka-button;
       border-radius: 50%;
     }
+  }
 
-    &::after {
+  &--checkbox {
+    padding: 12px;
+    padding-left: 62px;
+
+    &::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 11px;
+      left: -1px;
+      top: 2px;
 
-      display: none;
-      width: 18px;
-      height: 18px;
+      display: block;
+      width: 40px;
+      height: 39px;
 
-      background-color: $mishka-main;
-      border-radius: 50%;
+      border: 2px solid $mishka-button;
     }
   }
 }
 
-.form-page__box:checked ~ .form-page__label::after {
+.form-page__radio:checked ~ .form-page__label::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 12px;
+
   display: block;
+  width: 16px;
+  height: 16px;
+
+  background-color: $mishka-main;
+  border-radius: 50%;
+}
+
+.form-page__box:checked ~ .form-page__label::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 9px;
+
+  display: block;
+  width: 22px;
+  height: 16px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-size: 22px 16px;
 }
