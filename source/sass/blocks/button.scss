@@ -1,7 +1,6 @@
 .button {
-  display: block;
-  padding-top: 15px;
-  padding-bottom: 13px;
+  display: inline-block;
+  padding: 15px 10px 13px;
 
   font: inherit;
   font-size: 17px;
@@ -12,7 +11,7 @@
   text-align: center;
   text-decoration: none;
 
-  background-color: $bcg-color;
+  background-color: transparent;
   border: 2px solid $mishka-button;
 
   &:hover,
