@@ -1,0 +1,51 @@
+.form-page__title {
+  margin: 0 auto;
+  padding-top: 73px;
+  padding-bottom: 75px;
+
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  color: $text-color;
+  text-align: center;
+
+  background-color: $footer-color;
+}
+
+.form-page__description {
+  margin: 0;
+  padding: 17px 0;
+
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.form-page__form {
+  padding-top: 20px;
+}
+
+.form-page__fieldset {
+  position: relative;
+
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  border-top: 1px solid $mishka-main;
+}
+
+.form-page__legend {
+  position: absolute;
+  top: -10px;
+
+  margin: 0;
+  padding-right: 10px;
+
+  font-size: 17px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $mishka-main;
+
+  background-color: $bcg-color;
+}
