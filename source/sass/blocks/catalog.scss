@@ -16,11 +16,16 @@
 
 .catalog__list {
   @include list-reset;
+  margin-bottom: 29px;
 }
 
 .catalog__item {
   border: 1px solid $mishka-shadow;
   margin-bottom: 24px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .catalog__link {

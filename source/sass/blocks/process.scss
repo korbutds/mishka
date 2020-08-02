@@ -1,0 +1,36 @@
+.process__inner {
+  border: 1px solid $mishka-shadow;
+  padding-bottom: 32px;
+  margin-bottom: 58px;
+}
+
+.process__title {
+  margin: 0;
+  padding: 21px 34px 27px 91px;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: 33px 28px;
+}
+
+.process__about {
+  padding: 0 32px;
+}
+
+.process__description {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 25px 0;
+
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.process__button {
+  width: 100%;
+}
