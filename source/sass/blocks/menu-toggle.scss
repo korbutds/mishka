@@ -1,0 +1,17 @@
+.menu-toggle {
+  width: 20px;
+  height: 14px;
+
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 14px;
+  background-position: center;
+
+  &--active {
+    width: 21px;
+    height: 20px;
+
+    background-image: url("../img/icon-menu-close.svg");
+    background-size: 21px 20px;
+  }
+}

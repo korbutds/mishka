@@ -1,0 +1,60 @@
+.cart-modal {
+  padding-top: 30px;
+  padding-bottom: 46px;
+}
+
+.cart-modal__title {
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cart-modal__size {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-modal__legend {
+  margin-bottom: 21px;
+
+  color: $mishka-button;
+  text-align: center;
+}
+
+.cart-modal__label {
+  display: block;
+  width: 82px;
+  padding: 18px;
+
+  color: $mishka-button;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: 2px solid rgba($color: $mishka-button, $alpha: 0.1);
+}
+
+.cart-modal__checkbox:checked ~ .cart-modal__label {
+  border: 2px solid $mishka-main;
+}
+
+.cart-modal__button {
+  width: 100%;
+
+  color: $bcg-color;
+
+  background-color: $mishka-main;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $mishka-main-dark;
+  }
+}

@@ -1,0 +1,16 @@
+.logo {
+  display: inline-block;
+  height: 35px;
+
+  @include link-behavior;
+}
+
+.logo__icon {
+  &--tablet-type {
+    display: none;
+  }
+
+  &--desktop-type {
+    display: none;
+  }
+}

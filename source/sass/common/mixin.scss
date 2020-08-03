@@ -1,0 +1,19 @@
+@mixin link-behavior {
+  text-decoration: none;
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    color: rgba($color: $text-color, $alpha: 0.6);
+  }
+
+  &:active {
+    color: rgba($color: $text-color, $alpha: 0.3);
+  }
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

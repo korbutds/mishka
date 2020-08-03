@@ -1,0 +1,38 @@
+.shopping-list__label {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 26px;
+  padding-left: 76px;
+}
+
+.shopping-list__search {
+  font: inherit;
+
+  border: none;
+
+  &::placeholder {
+    color: $text-color;
+  }
+}
+
+.shopping-list__item {
+  position: relative;
+
+  &:hover .shopping-list__icon,
+  &:focus .shopping-list__icon {
+    color: $mishka-main;
+  }
+
+  &:active .shopping-list__icon,
+  &:focus-within .shopping-list__icon {
+    color: rgba($color: $mishka-main, $alpha: 0.3);
+  }
+}
+
+.shopping-list__icon {
+  position: absolute;
+  left: 33px;
+  top: 32px;
+
+  color: rgba($color: $text-color, $alpha: 0.2);
+}

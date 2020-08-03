@@ -1,0 +1,58 @@
+.contacts {
+  padding-top: 39px;
+  padding-bottom: 39px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 5px;
+
+  color: $mishka-button;
+}
+
+.contacts__item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contacts__property {
+  margin: 0;
+  flex-basis: 76px;
+  flex-shrink: 0;
+}
+
+.contacts__e-mail {
+  color: $mishka-button;
+  text-decoration: none;
+
+  border-bottom: 1px solid $mishka-main;
+
+  &:hover,
+  &:focus {
+    color: $mishka-main;
+  }
+
+  &:active {
+    border: none;
+  }
+}
+
+.contacts__map-wrapper {
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.contacts__button {
+  width: 100%;
+}
