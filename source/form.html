@@ -23,9 +23,7 @@
                 <use xlink:href="#mishka-logo-mobile"></use>
               </svg>
             </a>
-            <div class="main-nav__toggle menu-toggle menu-toggle--active">
-              <button class="main-nav__toggle" type="button"></button>
-            </div>
+            <button class="main-nav__toggle menu-toggle menu-toggle--active" type="button"></button>
           </div>
           <ul class="main-nav__list site-list">
             <li class="main-nav__item site-list__item site-list__item--catalog">
@@ -66,44 +64,44 @@
       <h1 class="form-page__title container">Вязание на заказ</h1>
       <div class="container">
         <p class="form-page__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="form-page__form" action="POST" action="https://echo.htmlacademy.ru">
+        <form class="form-page__form" method="POST" action="https://echo.htmlacademy.ru">
           <fieldset class="form-page__fieldset form-page__fieldset--type">
             <p class="form-page__legend form-page__legend--type">Тип</p>
-            <div class="form-page__label-wrapper">
+            <p class="form-page__label-wrapper">
               <input class="visually-hidden form-page__radio" type="radio" name="bind-type" id="accessory" value="accessory" checked>
               <label class="form-page__label form-page__label--radio" for="accessory">Аксессуар для интерьера</label>
-            </div>
-            <div class="form-page__label-wrapper">
+            </p>
+            <p class="form-page__label-wrapper">
               <input class="visually-hidden form-page__radio" type="radio" name="bind-type" id="toys" value="toys">
               <label class="form-page__label form-page__label--radio" for="toys">Детская игрушка</label>
-            </div>
+            </p>
           </fieldset>
           <fieldset class="form-page__fieldset form-page__fieldset--color">
             <p class="form-page__legend form-page__legend--color">Цвет</p>
-            <div class="form-page__label-wrapper">
+            <p class="form-page__label-wrapper">
               <input class="visually-hidden form-page__box" type="checkbox" name="white" id="white" checked>
               <label class="form-page__label form-page__label--checkbox" for="white">Белый</label>
-            </div>
-            <div class="form-page__label-wrapper">
+            </p>
+            <p class="form-page__label-wrapper">
               <input class="visually-hidden form-page__box" type="checkbox" name="grey" id="grey" checked>
               <label class="form-page__label form-page__label--checkbox" for="grey">Серый</label>
-            </div>
-            <div class="form-page__label-wrapper">
+            </p>
+            <p class="form-page__label-wrapper">
               <input class="visually-hidden form-page__box" type="checkbox" name="tiffany" id="tiffany">
               <label class="form-page__label form-page__label--checkbox" for="tiffany">«Тиффани»</label>
-            </div>
-            <div class="form-page__label-wrapper">
+            </p>
+            <p class="form-page__label-wrapper">
               <input class="visually-hidden form-page__box" type="checkbox" name="black" id="black">
               <label class="form-page__label form-page__label--checkbox" for="black">Черный</label>
-            </div>
-            <div class="form-page__label-wrapper">
+            </p>
+            <p class="form-page__label-wrapper">
               <input class="visually-hidden form-page__box" type="checkbox" name="pink" id="pink">
               <label class="form-page__label form-page__label--checkbox" for="pink">Розовый</label>
-            </div>
-            <div class="form-page__label-wrapper">
+            </p>
+            <p class="form-page__label-wrapper">
               <input class="visually-hidden form-page__box" type="checkbox" name="orange" id="orange" disabled>
               <label class="form-page__label form-page__label--checkbox" for="orange">Оранжевый</label>
-            </div>
+            </p>
           </fieldset>
           <fieldset class="form-page__fieldset form-page__fieldset--fio">
             <p class="form-page__legend form-page__legend--fio">ФИО</p>
@@ -148,12 +146,13 @@
       </div>
     </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__inner container">
+    <footer class="page-footer container">
+      <div class="page-footer__inner">
         <a class="page-footer__logo logo" href="index.html">
           <img class="logo__footer-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишки - интеренет-магазин милых вещей для дома">
         </a>
         <section class="page-footer__social social">
+          <h2 class="visualy-hidden">Мы в социальных сетях</h2>
           <ul class="social__list">
             <li class="social__item social__item--instagram">
               <a class="social__link" href="https://www.instagram.com/htmlacademy" target="_blank">
@@ -182,6 +181,7 @@
           </ul>
         </section>
         <section class="page-footer__copyright copyright">
+          <h2 class="visualy-hidden">Профессиональная разработка сайтов</h2>
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <svg class="copyright__logo" width="27" height="34">

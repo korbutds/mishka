@@ -32,24 +32,28 @@
   position: relative;
 
   margin: 0;
-  padding: 29px 0 20px;
+  margin-bottom: 17px;
+  padding: 0;
+  padding-top: 29px;
 
   border: none;
   border-top: 1px solid $mishka-main;
 
   &--fio {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
+    margin-top: 0;
+    padding-top: 37px;
   }
 
   &--tel,
   &--email {
-    padding-top: 18px;
-    margin-bottom: 19px;
+    padding-top: 13px;
+    margin-bottom: 34px;
   }
 
   &:last-of-type {
     padding-bottom: 0;
-    margin-bottom: 6px;
+    margin-bottom: 0;
   }
 }
 
@@ -70,26 +74,28 @@
 }
 
 .form-page__label-wrapper {
-  display: flex;
-  flex-direction: column;
+  margin: 0;
 }
 
 .form-page__label {
   position: relative;
-  display: block;
-  min-height: 61px;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  margin-bottom: 22px;
 
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
 
+  cursor: pointer;
+
   &--fio {
+    margin-bottom: 0;
     min-height: auto;
-    padding-top: 10px;
   }
 
   &--radio {
-    padding: 13px;
     padding-left: 62px;
 
     &::before {
@@ -108,7 +114,6 @@
   }
 
   &--checkbox {
-    padding: 13px;
     padding-left: 62px;
 
     &::before {
@@ -135,7 +140,7 @@
     content: "";
     position: absolute;
     top: 14px;
-    left: 12px;
+    left: 11px;
 
     display: block;
     width: 16px;
@@ -192,16 +197,22 @@
   }
 }
 
+.form-page__input-label {
+  display: flex;
+}
+
 .form-page__input {
   position: relative;
 
-  padding: 15px 0;
+  padding: 10px 0;
   padding-right: 40px;
   width: 100%;
+  margin-bottom: 7px;
+  min-height: 52px;
 
   font: inherit;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 1;
   border: none;
   border-bottom: 2px solid $mishka-button;
 
