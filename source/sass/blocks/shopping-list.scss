@@ -1,8 +1,22 @@
+.shopping-list {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
 .shopping-list__label {
   display: block;
   padding-top: 27px;
   padding-bottom: 26px;
   padding-left: 76px;
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 10px;
+    padding-left: 37px;
+    padding-right: 45px;
+    border-left: 1px solid rgba($color: $text-color, $alpha: 0.1);
+    border-right: 1px solid rgba($color: $text-color, $alpha: 0.1);
+  }
 }
 
 .shopping-list__search {
@@ -10,8 +24,31 @@
 
   border: none;
 
+  @media (min-width: $tablet-width) {
+    width: 0;
+  }
+
+  &:hover,
+  &:focus {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+
+    & ~ .shopping-list__icon--search {
+      left: 10px;
+    }
+
+    &::placeholder {
+      color: $text-color;
+    }
+  }
+
   &::placeholder {
     color: $text-color;
+
+    @media (min-width: $tablet-width) {
+      color: transparent;
+    }
   }
 }
 
