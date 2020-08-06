@@ -18,7 +18,7 @@
     display: none;
     height: 46px;
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
       display: inline-block;
     }
   }
