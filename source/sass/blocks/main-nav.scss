@@ -23,7 +23,10 @@
   order: -2;
 
   padding: 22px 0 16px;
-  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
 }
 
 .main-nav__toggle {
