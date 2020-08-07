@@ -3,15 +3,35 @@
   padding-bottom: 29px;
 }
 
+@media (min-width: $desktop-width) {
+  .about-us__inner {
+    padding: 0 175px;
+  }
+}
+
 .about-us__list {
   @include list-reset;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .about-us__title {
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .about-us__item {
@@ -31,6 +51,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 47px 27px;
+    order: 3;
   }
 
   &--likes {
@@ -38,6 +59,7 @@
     background-repeat: no-repeat;
     background-position: 8px 6px;
     background-size: 34px 27px;
+    order: 5;
   }
 
   &--hand-made {
@@ -45,6 +67,7 @@
     background-repeat: no-repeat;
     background-position: 4px 3px;
     background-size: 35px 34px;
+    order: 1;
   }
 
   &--native {
@@ -52,6 +75,7 @@
     background-repeat: no-repeat;
     background-position: -5px 4px;
     background-size: 55px 23px;
+    order: 4;
   }
 
   &--gift-box {
@@ -59,5 +83,6 @@
     background-repeat: no-repeat;
     background-position: 4px 2px;
     background-size: 33px 32px;
+    order: 6;
   }
 }
