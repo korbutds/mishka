@@ -3,7 +3,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .review__inner{
+  .review__inner {
     height: 457px;
 
     background-image: url("../img/review@1x.jpg");
@@ -31,6 +31,11 @@
   position: relative;
 
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .review__list {
