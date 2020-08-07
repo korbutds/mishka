@@ -3,12 +3,6 @@
   padding-bottom: 29px;
 }
 
-@media (min-width: $desktop-width) {
-  .about-us__inner {
-    padding: 0 175px;
-  }
-}
-
 .about-us__list {
   @include list-reset;
   font-size: 17px;
@@ -23,6 +17,11 @@
     font-size: 20px;
     line-height: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
 }
 
 .about-us__title {
@@ -31,6 +30,10 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 175px;
   }
 }
 
