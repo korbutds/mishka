@@ -3,8 +3,11 @@
   padding-bottom: 29px;
 }
 
-.about-us__inner {
-  padding-left: 175px;
+@media (min-width: $desktop-width) {
+  .about-us__inner {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
 }
 
 .about-us__list {
