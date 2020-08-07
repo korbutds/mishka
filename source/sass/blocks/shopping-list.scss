@@ -28,21 +28,6 @@
     width: 0;
   }
 
-  &:hover,
-  &:focus {
-    @media (min-width: $tablet-width) {
-      width: 100%;
-    }
-
-    & ~ .shopping-list__icon--search {
-      left: 10px;
-    }
-
-    &::placeholder {
-      color: $text-color;
-    }
-  }
-
   &::placeholder {
     color: $text-color;
 
