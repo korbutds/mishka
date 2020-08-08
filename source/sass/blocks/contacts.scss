@@ -1,18 +1,38 @@
 .contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   padding-top: 39px;
-  padding-bottom: 39px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
 }
 
 .contacts__inner {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+
   @media (min-width: $tablet-width) {
-    background-image: url("../img/icon-flag.svg");
-    background-repeat: no-repeat;
-    background-position: 100% 0;
-    background-size: 47px 81px;
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    padding-left: 120px;
   }
 }
 
 .contacts__title {
+  position: relative;
   margin: 0;
 
   font-size: 18px;
@@ -22,6 +42,26 @@
     font-size: 53px;
     line-height: 57px;
     padding: 12px 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      right: auto;
+      left: -60px;
+    }
   }
 }
 
@@ -40,6 +80,10 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .contacts__item {
@@ -48,6 +92,10 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
   }
 }
 
@@ -75,6 +123,7 @@
 
 .contacts__map-wrapper {
   text-align: center;
+  margin: 0 auto;
 
   &--tablet {
     display: none;
@@ -82,6 +131,8 @@
 
   &--desktop {
     display: none;
+    width: 525px;
+    height: 457px;
   }
 
   @media (min-width: $tablet-width) {
@@ -106,5 +157,16 @@
 }
 
 .contacts__button {
-  width: 100%;
+  width: 260px;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+  }
 }
