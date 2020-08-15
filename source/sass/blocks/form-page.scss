@@ -302,6 +302,22 @@
   line-height: 16px;
 }
 
+.form-page__submit-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 167px;
+  }
+}
+
 .form-page__submit {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    width: 230px;
+  }
 }
