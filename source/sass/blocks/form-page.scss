@@ -14,6 +14,15 @@
   text-align: center;
 
   background-color: $footer-color;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -65px;
+    z-index: -1;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .form-page__description {
@@ -22,6 +31,11 @@
 
   font-size: 13px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .form-page__form {
@@ -31,6 +45,7 @@
 .form-page__fieldset {
   position: relative;
 
+  display: grid;
   margin: 0;
   margin-bottom: 17px;
   padding: 0;
@@ -55,6 +70,11 @@
     padding-bottom: 0;
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 167px;
+    border: none;
+  }
 }
 
 .form-page__legend {
@@ -71,6 +91,10 @@
   color: $mishka-main;
 
   background-color: $bcg-color;
+
+  @media (min-width: $tablet-width) {
+    width: 167px;
+  }
 }
 
 .form-page__label-wrapper {
