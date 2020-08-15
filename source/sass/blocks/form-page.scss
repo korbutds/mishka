@@ -74,6 +74,16 @@
   @media (min-width: $tablet-width) {
     padding-left: 167px;
     border: none;
+
+    &--color {
+      background-color: $footer-color;
+    }
+  }
+}
+
+.form-page__contacts {
+  @media (min-width: $tablet-width) {
+    background-color: $footer-color;
   }
 }
 
@@ -93,12 +103,19 @@
   background-color: $bcg-color;
 
   @media (min-width: $tablet-width) {
-    width: 167px;
+    top: 39px;
+    left: 0;
+
+    background-color: transparent;
   }
 }
 
 .form-page__label-wrapper {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 240px;
+  }
 }
 
 .form-page__label {
@@ -157,6 +174,11 @@
   &:hover::before {
     border-color: $mishka-main;
   }
+}
+
+.form-page__check-wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .form-page__radio {
@@ -239,6 +261,7 @@
   line-height: 1;
   border: none;
   border-bottom: 2px solid $mishka-button;
+  background-color: transparent;
 
   &::placeholder {
     color: rgba($color: $text-color, $alpha: 0.3);
