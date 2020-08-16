@@ -1,17 +1,22 @@
 .week-product {
-  padding-top: 31px;
-  padding-bottom: 36px;
+  padding-top: 32px;
+  padding-bottom: 82px;
   background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: 50% 100%;
-  background-size: auto 17px;
+  background-size: auto 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    background-size: auto 17px;
+  }
 }
 
 .week-product__inner {
   display: grid;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: auto auto auto 170px;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "tit tit tit lab" "ab ab img img" "lis lis img img" "pr pr img img""btn btn img img";
   }
@@ -28,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     grid-area: tit;
-    margin-bottom: 0;
+    margin-bottom: 37px;
 
     font-size: 43px;
     line-height: 50px;
@@ -48,7 +53,7 @@
 
 .week-product__label {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 
   font-size: 17px;
   line-height: 1;
@@ -60,6 +65,7 @@
     grid-area: lab;
     padding-right: 10px;
     padding-left: 54px;
+    padding-top: 6px;
     margin: 0;
 
     text-align: center;
@@ -82,7 +88,8 @@
 
   @media (min-width: $tablet-width) {
     grid-area: ab;
-    margin-bottom: 0;
+    margin-bottom: 17px;
+    padding-right: 40px;
 
     font-size: 17px;
     line-height: 30px;
@@ -122,6 +129,7 @@
   &--mobile {
     width: 260px;
     height: 315px;
+    margin-bottom: 27px;
   }
 
   &--tablet {
@@ -168,7 +176,7 @@
 
 .week-product__price {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 
   font-size: 17px;
   line-height: 24px;
@@ -179,8 +187,9 @@
   @media (min-width: $tablet-width) {
     grid-area: pr;
     margin-bottom: 0;
+    padding-top: 10px;
 
-    font-style: 20px;
+    font-size: 20px;
     line-height: 24px;
   }
 
