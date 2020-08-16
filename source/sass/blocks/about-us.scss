@@ -1,12 +1,22 @@
 .about-us {
   padding-top: 31px;
   padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+    padding-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 68px;
+    padding-bottom: 28px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .about-us__inner {
-    padding-left: 175px;
-    padding-right: 175px;
+    padding-left: 225px;
+    padding-right: 225px;
   }
 }
 
@@ -32,6 +42,12 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -85,5 +101,9 @@
     background-position: 4px 2px;
     background-size: 33px 32px;
     order: 6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
   }
 }
