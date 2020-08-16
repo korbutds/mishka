@@ -85,10 +85,16 @@
 .main-nav__link {
   @include link-behavior;
   display: block;
+  margin: 0 auto;
   padding-top: 28px;
   padding-bottom: 26px;
   padding-left: 76px;
   padding-right: 10px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .main-nav__features {
