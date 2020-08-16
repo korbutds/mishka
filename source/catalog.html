@@ -30,7 +30,7 @@
               <a class="main-nav__link site-list__link" href="#">Каталог товаров</a>
             </li>
             <li class="main-nav__item site-list__item site-list__item--bind">
-              <a class="main-nav__link site-list__link" href="form.html">Вязание на заказ</a>
+              <a class="main-nav__link site-list__link  site-list__link--bind" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list shopping-list">
@@ -44,11 +44,13 @@
                 </label>
               </form>
             </li>
-            <li class="main-nav__item shopping-list__item">
-              <a class="main-nav__link shopping-list__link" href="#">Корзина: пока пуста</a>
-              <svg class="shopping-list__icon shopping-list__icon--cart" width="21" height="18">
-                <use xlink:href="#icon-cart"></use>
-              </svg>
+            <li class="main-nav__item shopping-list__item shopping-list__item--cart">
+              <a class="main-nav__link shopping-list__link" href="#">
+                <span class="shopping-list__name">Корзина: пока пуста</span>
+                <svg class="shopping-list__icon shopping-list__icon--cart" width="21" height="18">
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </a>
             </li>
           </ul>
           <ul class="main-nav__list catalog-nav-list">

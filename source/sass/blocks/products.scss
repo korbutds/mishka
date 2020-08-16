@@ -1,4 +1,6 @@
 .products {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,21 +14,43 @@
   background-clip: border-box;
 
   @media (min-width: $tablet-width) {
-    margin-top: -62px;
-    padding-top: 190px;
-    min-height: 746px;
+    margin-top: -56px;
+    padding-top: 156px;
+    min-height: 759px;
 
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: 1150px 746px;
     background-position: center 0;
     background-clip: border-box;
+
+    border-top: 1px solid rgba($text-color, 0.1);
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      display: block;
+      width: 100%;
+      height: 24px;
+      left: 0;
+      bottom: -2px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: 50% 100%;
+      background-size: auto 100%;
+
+      @media (min-width: $desktop-width) {
+        height: 34px;
+      }
+    }
   }
 }
 
 .products__slogan {
   margin: 0;
-  min-height: 210px;
+  min-height: 208px;
 
   font-size: 27px;
   line-height: 30px;
@@ -37,6 +61,11 @@
     font-size: 43px;
     line-height: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .products__list {
@@ -45,6 +74,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
     flex-direction: row;
     align-items: center;
   }
@@ -53,10 +83,6 @@
 .products__item {
   &--interior {
     background-color: $mishka-main;
-
-    @media (min-width: $tablet-width) {
-      margin-right: 0;
-    }
   }
 
   &--toys {
@@ -69,6 +95,8 @@
 
   @media (min-width: $tablet-width) {
     width: 334px;
+    margin-right: 0;
+    padding-bottom: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,10 +106,10 @@
 
 .products__link {
   display: block;
-  width: auto;
   min-height: 103px;
+  padding: 0 30px;
   padding-top: 24px;
-  padding-right: 160px;
+  padding-right: 120px;
 
   text-decoration: none;
   color: #ffffff;
@@ -103,7 +131,7 @@
     &::after {
       width: 40px;
       height: 62px;
-      right: 5px;
+      right: 36px;
       top: 24px;
 
       background-image: url("../img/icon-interior.svg");
@@ -117,7 +145,7 @@
     &::after {
       width: 60px;
       height: 60px;
-      right: -4px;
+      right: 27px;
       top: 22px;
 
       background-image: url("../img/icon-toy.svg");
@@ -126,9 +154,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 30px;
+    padding-top: 26px;
     padding-right: 167px;
+    padding-left: 35px;
+    padding-bottom: 10px;
     font-size: 20px;
+    line-height: 30px;
     min-height: 119px;
   }
 
