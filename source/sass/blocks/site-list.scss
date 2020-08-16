@@ -6,8 +6,8 @@
 
   @media (min-width: $desktop-width) {
     order: -3;
-    padding-bottom: 26px;
     margin-right: 0;
+    flex-basis: 450px;
   }
 }
 
@@ -19,7 +19,11 @@
 
   @media (min-width: $desktop-width) {
     font-size: 17px;
-    min-width: 220px;
+    min-width: auto;
+
+    &:not(:last-child) {
+      border-right: 1px solid $mishka-shadow;
+    }
   }
 }
 
@@ -27,5 +31,17 @@
   @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-bottom: 10px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    padding-right: 35px;
+
+    &--bind {
+      padding-right: 0;
+      padding-left: 35px;
+    }
   }
 }

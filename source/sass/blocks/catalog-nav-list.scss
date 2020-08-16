@@ -14,10 +14,13 @@
 }
 
 .catalog-nav-list__link {
+  display: inline-block;
+
   @include link-behavior;
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
     padding-bottom: 10px;
+    padding-top: 19px;
   }
 }
