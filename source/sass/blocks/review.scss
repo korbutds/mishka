@@ -27,13 +27,13 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
-    background-position-x: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .review__inner {
     padding-left: 225px;
+    background-position-x: 50px;
   }
 }
 

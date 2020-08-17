@@ -34,21 +34,23 @@
 .contacts__title {
   position: relative;
   margin: 0;
+  margin-bottom: 26px;
 
   font-size: 18px;
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
-    font-size: 53px;
-    line-height: 57px;
-    padding: 12px 0;
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 48px;
+    padding-top: 30px;
 
     &::after {
       content: "";
       position: absolute;
       display: block;
-      top: 0;
-      right: 0;
+      top: 7px;
+      right: 3px;
       width: 47px;
       height: 81px;
       background-image: url("../img/icon-flag.svg");
@@ -79,6 +81,9 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -123,14 +128,17 @@
 
 .contacts__map-wrapper {
   text-align: center;
-  margin: 0 auto;
+  margin-bottom: 34px;
 
   &--tablet {
+    margin: 0 auto;
+    margin-bottom: 47px;
     display: none;
   }
 
   &--desktop {
     display: none;
+    margin: 0 auto;
     width: 525px;
     height: 457px;
   }
@@ -156,12 +164,20 @@
   }
 }
 
+.contacts__map {
+  &--mobile {
+    width: 100%;
+  }
+}
+
 .contacts__button {
-  width: 260px;
+  margin-bottom: 38px;
   align-self: center;
+  padding: 14px 54px;
 
   @media (min-width: $tablet-width) {
-    min-width: 230px;
+    padding: 14px 39px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
