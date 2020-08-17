@@ -1,5 +1,10 @@
 .review {
-  padding-bottom: 45px;
+  padding-bottom: 52px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: 50% 100%;
+  background-repeat: repeat-x;
+  background-size: auto 6px;
 }
 
 @media (min-width: $tablet-width) {
