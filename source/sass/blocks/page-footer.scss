@@ -1,12 +1,16 @@
 .page-footer {
   background-color: $footer-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0;
+  }
 }
 
 .page-footer__inner {
   display: grid;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 33% 33% 34%;
   }
 }
 
