@@ -63,24 +63,26 @@
     </header>
 
     <main class="page-main form-page">
-      <h1 class="form-page__title container">Вязание на заказ</h1>
-      <div class="container">
-        <p class="form-page__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="form-page__form" method="POST" action="https://echo.htmlacademy.ru">
-          <fieldset class="form-page__fieldset form-page__fieldset--type">
-            <p class="form-page__legend form-page__legend--type">Тип</p>
-            <div class="form-page__check-wrapper">
-              <p class="form-page__label-wrapper">
-                <input class="visually-hidden form-page__radio" type="radio" name="bind-type" id="accessory" value="accessory" checked>
-                <label class="form-page__label form-page__label--radio" for="accessory">Аксессуар для интерьера</label>
-              </p>
-              <p class="form-page__label-wrapper">
-                <input class="visually-hidden form-page__radio" type="radio" name="bind-type" id="toys" value="toys">
-                <label class="form-page__label form-page__label--radio" for="toys">Детская игрушка</label>
-              </p>
-            </div>
-          </fieldset>
-          <fieldset class="form-page__fieldset form-page__fieldset--color">
+      <div class="form-page__header">
+        <h1 class="form-page__title container">Вязание на заказ</h1>
+      </div>
+      <p class="form-page__description container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="form-page__form" method="POST" action="https://echo.htmlacademy.ru">
+        <fieldset class="form-page__fieldset form-page__fieldset--type container">
+          <p class="form-page__legend form-page__legend--type">Тип</p>
+          <div class="form-page__check-wrapper">
+            <p class="form-page__label-wrapper">
+              <input class="visually-hidden form-page__radio" type="radio" name="bind-type" id="accessory" value="accessory" checked>
+              <label class="form-page__label form-page__label--radio" for="accessory">Аксессуар для интерьера</label>
+            </p>
+            <p class="form-page__label-wrapper">
+              <input class="visually-hidden form-page__radio" type="radio" name="bind-type" id="toys" value="toys">
+              <label class="form-page__label form-page__label--radio" for="toys">Детская игрушка</label>
+            </p>
+          </div>
+        </fieldset>
+        <fieldset class="form-page__fieldset form-page__fieldset--color">
+          <div class="container">
             <p class="form-page__legend form-page__legend--color">Цвет</p>
             <div class="form-page__check-wrapper">
               <p class="form-page__label-wrapper">
@@ -108,52 +110,52 @@
                 <label class="form-page__label form-page__label--checkbox" for="orange">Оранжевый</label>
               </p>
             </div>
-          </fieldset>
-          <fieldset class="form-page__fieldset form-page__fieldset--fio">
-            <p class="form-page__legend form-page__legend--fio">ФИО</p>
-            <p class="form-page__input-wrapper">
-              <label class="form-page__label form-page__label--name form-page__label--fio" for="form-name">Имя:</label>
-              <input class="form-page__input form-page__input--name" id="form-name" type="text" placeholder="Введите ваше имя*" required>
-            </p>
-            <p class="form-page__input-wrapper">
-              <label class="form-page__label form-page__label--surname form-page__label--fio" for="form-surname">Фамилия:</label>
-              <input class="form-page__input form-page__input--surname" id="form-surname" type="text" placeholder="Укажите фамилию*" required>
-            </p>
-            <p class="form-page__input-wrapper">
-              <label class="form-page__label form-page__label--patronymic form-page__label--fio" for="form-patronymic">Отчество:</label>
-              <input class="form-page__input form-page__input--patronymic" id="form-patronymic" type="text" placeholder="Отчество, если желаете">
-            </p>
-          </fieldset>
-          <div class="form-page__contacts">
-            <fieldset class="form-page__fieldset form-page__fieldset--tel">
-              <p class="form-page__legend form-page__legend--tel">Тел</p>
-              <label class="form-page__input-label form-page__input-label--tel">
-                <input class="form-page__input form-page__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-                <svg class="form-page__input-image form-page__input-image--tel" width="25" height="24">
-                  <use xlink:href="#icon-phone"></use>
-                </svg>
-              </label>
-            </fieldset>
-            <fieldset class="form-page__fieldset form-page__fieldset--email">
-              <p class="form-page__legend form-page__legend--email">e-mail</p>
-              <label class="form-page__input-label form-page__input-label--email">
-                <input class="form-page__input form-page__input--email" type="email" placeholder="Ваш Email*" required>
-                <svg class="form-page__input-image form-page__input-image--email" width="32" height="32">
-                  <use xlink:href="#icon-mail"></use>
-                </svg>
-              </label>
-            </fieldset>
           </div>
-          <fieldset class="form-page__fieldset form-page__fieldset--add">
-            <p class="form-page__legend">доп</p>
-            <textarea class="form-page__input form-page__input--add" placeholder="Опишите все ваши пожелания к заказу" rows="6" required></textarea>
+        </fieldset>
+        <fieldset class="form-page__fieldset form-page__fieldset--fio container">
+          <p class="form-page__legend form-page__legend--fio">ФИО</p>
+          <p class="form-page__input-wrapper">
+            <label class="form-page__label form-page__label--name form-page__label--fio" for="form-name">Имя:</label>
+            <input class="form-page__input form-page__input--name" id="form-name" type="text" placeholder="Введите ваше имя*" required>
+          </p>
+          <p class="form-page__input-wrapper">
+            <label class="form-page__label form-page__label--surname form-page__label--fio" for="form-surname">Фамилия:</label>
+            <input class="form-page__input form-page__input--surname" id="form-surname" type="text" placeholder="Укажите фамилию*" required>
+          </p>
+          <p class="form-page__input-wrapper">
+            <label class="form-page__label form-page__label--patronymic form-page__label--fio" for="form-patronymic">Отчество:</label>
+            <input class="form-page__input form-page__input--patronymic" id="form-patronymic" type="text" placeholder="Отчество, если желаете">
+          </p>
+        </fieldset>
+        <div class="form-page__contacts">
+          <fieldset class="form-page__fieldset form-page__fieldset--tel container">
+            <p class="form-page__legend form-page__legend--tel">Тел</p>
+            <label class="form-page__input-label form-page__input-label--tel">
+              <input class="form-page__input form-page__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              <svg class="form-page__input-image form-page__input-image--tel" width="25" height="24">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+            </label>
           </fieldset>
-          <div class="form-page__submit-wrapper">
-            <small class="form-page__attention">*Поля обязательны для заполнения</small>
-            <button class="button form-page__submit" type="submit">Отправить заказ</button>
-          </div>
-        </form>
-      </div>
+          <fieldset class="form-page__fieldset form-page__fieldset--email container">
+            <p class="form-page__legend form-page__legend--email">e-mail</p>
+            <label class="form-page__input-label form-page__input-label--email">
+              <input class="form-page__input form-page__input--email" type="email" placeholder="Ваш Email*" required>
+              <svg class="form-page__input-image form-page__input-image--email" width="32" height="32">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
+            </label>
+          </fieldset>
+        </div>
+        <fieldset class="form-page__fieldset form-page__fieldset--add container">
+          <p class="form-page__legend">доп</p>
+          <textarea class="form-page__input form-page__input--add" placeholder="Опишите все ваши пожелания к заказу" rows="6" required></textarea>
+        </fieldset>
+        <div class="form-page__submit-wrapper container">
+          <small class="form-page__attention">*Поля обязательны для заполнения</small>
+          <button class="button form-page__submit" type="submit">Отправить заказ</button>
+        </div>
+      </form>
     </main>
 
     <footer class="page-footer">

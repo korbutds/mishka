@@ -2,6 +2,17 @@
   margin-bottom: 56px;
 }
 
+.form-page__header {
+  background-color: $footer-color;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: bottom;
+    background-size: auto 24px;
+    background-repeat: repeat-x;
+  }
+}
+
 .form-page__title {
   margin: 0 auto;
   padding-top: 73px;
@@ -13,20 +24,19 @@
   color: $text-color;
   text-align: center;
 
-  background-color: $footer-color;
-
   @media (min-width: $tablet-width) {
-    position: relative;
-    top: -65px;
-    z-index: -1;
+    margin-top: -55px;
+    padding-top: 101px;
+    padding-bottom: 85px;
 
     font-size: 43px;
     line-height: 50px;
+
+    border-top: 1px solid $mishka-shadow;
   }
 }
 
 .form-page__description {
-  margin: 0;
   padding-top: 15px;
   padding-bottom: 17px;
 
@@ -34,6 +44,9 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 21px;
+
     font-size: 17px;
     line-height: 30px;
   }
@@ -47,13 +60,17 @@
   position: relative;
 
   display: grid;
-  margin: 0;
-  margin-bottom: 17px;
-  padding: 0;
-  padding-top: 29px;
+  margin-bottom: 18px;
 
   border: none;
-  border-top: 1px solid $mishka-main;
+
+  &--color {
+    padding: 0;
+
+    @media (min-width) {
+      background-color: $footer-color;
+    }
+  }
 
   &--fio {
     margin-bottom: 35px;
@@ -69,6 +86,7 @@
 
   &--add {
     margin-bottom: 12px;
+    padding-top: 30px;
   }
 
   &:last-of-type {
@@ -86,6 +104,8 @@
 }
 
 .form-page__contacts {
+  margin-bottom: 37px;
+
   @media (min-width: $tablet-width) {
     background-color: $footer-color;
   }
@@ -107,7 +127,7 @@
   background-color: $bcg-color;
 
   @media (min-width: $tablet-width) {
-    top: 39px;
+    top: 40px;
     left: 0;
 
     background-color: transparent;
@@ -117,7 +137,7 @@
 .form-page__label-wrapper {
   margin: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 240px;
   }
 }
@@ -155,6 +175,18 @@
 
       border: 2px solid $mishka-button;
       border-radius: 50%;
+
+      @media (min-width: $tablet-width) {
+        top: -8px;
+
+        width: 54px;
+        height: 54px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-left: 80px;
+      margin-bottom: 36px;
     }
   }
 
@@ -164,8 +196,8 @@
     &::before {
       content: "";
       position: absolute;
-      left: -1px;
-      top: 2px;
+      left: -3px;
+      top: 1px;
 
       display: block;
       width: 40px;
@@ -178,14 +210,22 @@
   &:hover::before {
     border-color: $mishka-main;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 1;
+  }
 }
 
 .form-page__check-wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding-top: 29px;
 
-  @media (min-width: $tablet-width) {
+  border-top: 1px solid $mishka-main;
+
+  @media (min-width: $desktop-width) {
     flex-direction: row;
   }
 }
@@ -203,6 +243,14 @@
 
     background-color: $mishka-main;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: 9px;
+      left: 16px;
+
+      width: 21px;
+      height: 21px;
+    }
   }
 
   &:disabled ~ .form-page__label {
@@ -220,7 +268,7 @@
     content: "";
     position: absolute;
     top: 14px;
-    left: 9px;
+    left: 6px;
 
     display: block;
     width: 22px;
@@ -298,7 +346,7 @@
 .form-page__input-image {
   position: absolute;
   top: 25px;
-  right: 6px;
+  right: 36px;
 
   color: rgba($color: $text-color, $alpha: 0.3);
 }
