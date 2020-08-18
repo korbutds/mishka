@@ -27,6 +27,15 @@
     background-repeat: repeat-x;
     background-size: auto 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 114px;
+    margin-bottom: 111px;
+
+    font-size: 53px;
+    line-height: 57px;
+    background-size: auto 34px;
+  }
 }
 
 .catalog__list {
@@ -122,6 +131,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    flex-grow: 1;
   }
 }
 
@@ -143,6 +153,11 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 25px;
+    padding-right: 50px;
+  }
 }
 
 .catalog__information-list {
@@ -158,6 +173,11 @@
     margin-left: 30px;
 
     font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 25px;
+    padding-bottom: 13px;
   }
 }
 
@@ -184,6 +204,11 @@
   @media (min-width: $tablet-width) {
     padding: 20px 0;
     margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 0 19px;
+    margin-left: 25px;
   }
 }
 
