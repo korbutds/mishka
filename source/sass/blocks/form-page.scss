@@ -27,7 +27,8 @@
 
 .form-page__description {
   margin: 0;
-  padding: 17px 0;
+  padding-top: 15px;
+  padding-bottom: 17px;
 
   font-size: 13px;
   line-height: 24px;
@@ -55,7 +56,7 @@
   border-top: 1px solid $mishka-main;
 
   &--fio {
-    margin-bottom: 32px;
+    margin-bottom: 35px;
     margin-top: 0;
     padding-top: 37px;
   }
@@ -66,9 +67,12 @@
     margin-bottom: 34px;
   }
 
+  &--add {
+    margin-bottom: 12px;
+  }
+
   &:last-of-type {
     padding-bottom: 0;
-    margin-bottom: 0;
   }
 
   @media (min-width: $tablet-width) {
