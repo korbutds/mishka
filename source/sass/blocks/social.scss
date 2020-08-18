@@ -9,6 +9,8 @@
   @media (min-width: $tablet-width) {
     padding-left: 40px;
     padding-right: 40px;
+
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {

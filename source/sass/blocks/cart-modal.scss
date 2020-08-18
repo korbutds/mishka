@@ -45,6 +45,7 @@
   padding: 18px;
   margin-right: 7px;
 
+  cursor: pointer;
   color: $mishka-button;
   font-size: 17px;
   line-height: 17px;
@@ -53,6 +54,11 @@
   text-align: center;
 
   border: 2px solid rgba($color: $mishka-button, $alpha: 0.1);
+
+  &:hover,
+  &:focus {
+    border-color: rgba($mishka-button, 0.4);
+  }
 }
 
 .cart-modal__checkbox:checked ~ .cart-modal__label {

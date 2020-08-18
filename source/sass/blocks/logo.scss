@@ -11,6 +11,15 @@
   @media (min-width: $desktop-width) {
     height: 72px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .logo__icon {
