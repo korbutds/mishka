@@ -1,6 +1,7 @@
 .logo {
-  display: inline-block;
+  display: inline-flex;
   height: 35px;
+  align-self: center;
 
   @include link-behavior;
 
@@ -12,12 +13,12 @@
     height: 72px;
   }
 
-  &:hover,
-  &:focus {
+  &:not(&--index):hover,
+  &:not(&--index):focus {
     opacity: 0.6;
   }
 
-  &:active {
+  &:not(&--index):active {
     opacity: 0.3;
   }
 }
