@@ -1,5 +1,9 @@
 .form-page {
   margin-bottom: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .form-page__header {
@@ -66,27 +70,65 @@
 
   &--color {
     padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
 
-    @media (min-width) {
+    @media (min-width: $tablet-width) {
+
       background-color: $footer-color;
+
+      & .container {
+        position: relative;
+      }
     }
   }
 
   &--fio {
+    position: relative;
+
     margin-bottom: 35px;
     margin-top: 0;
     padding-top: 37px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      top: 0;
+      border-top: 1px solid #63d1bb;
+
+      @media (min-width: $tablet-width) {
+        content: none;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-left: 217px;
+      padding-top: 53px;
+      margin-bottom: 47px;
+    }
   }
 
   &--tel,
   &--email {
     padding-top: 13px;
     margin-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 216px;
+      margin-bottom: 7px;
+    }
   }
 
   &--add {
     margin-bottom: 12px;
     padding-top: 30px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 217px;
+      padding-top: 13px;
+      margin-bottom: 53px;
+    }
   }
 
   &:last-of-type {
@@ -94,8 +136,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 167px;
-    border: none;
+    &--type {
+      padding-left: 217px;
+      margin-bottom: 20px;
+    }
 
     &--color {
       background-color: $footer-color;
@@ -107,6 +151,9 @@
   margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 34px;
+    padding-bottom: 43px;
+
     background-color: $footer-color;
   }
 }
@@ -128,14 +175,43 @@
 
   @media (min-width: $tablet-width) {
     top: 40px;
-    left: 0;
+    left: 50px;
 
     background-color: transparent;
+
+    &--color {
+      top: 65px;
+    }
+
+    &--fio {
+      top: 75px;
+    }
+
+    &--tel {
+      top: 30px;
+    }
+
+    &--email {
+      top: 34px;
+    }
+
+    &--add {
+      top: 32px;
+    }
   }
 }
 
 .form-page__label-wrapper {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    min-width: 239px;
+
+    &:nth-child(2n-1) {
+      margin-right: auto;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     width: 240px;
@@ -158,6 +234,10 @@
   &--fio {
     margin-bottom: 0;
     min-height: auto;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 24px;
+    }
   }
 
   &--radio {
@@ -196,7 +276,7 @@
     &::before {
       content: "";
       position: absolute;
-      left: -3px;
+      left: 0;
       top: 1px;
 
       display: block;
@@ -204,6 +284,18 @@
       height: 39px;
 
       border: 2px solid $mishka-button;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-left: 78px;
+      padding-top: 15px;
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+
+      &::before {
+        width: 54px;
+        height: 52px;
+      }
     }
   }
 
@@ -224,6 +316,16 @@
   padding-top: 29px;
 
   border-top: 1px solid $mishka-main;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+
+    &--checkbox {
+      padding-top: 49px;
+      padding-left: 168px;
+      flex-direction: row;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -277,6 +379,16 @@
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-size: 22px 16px;
+
+    @media (min-width: $tablet-width) {
+      top: 17px;
+      left: 10px;
+
+      width: 33px;
+      height: 22px;
+
+      background-size: 33px 22px;
+    }
   }
 
   &:disabled ~ .form-page__label {
@@ -291,12 +403,17 @@
 
 .form-page__input-wrapper {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin-bottom: 22px;
   }
 }
 
@@ -341,6 +458,16 @@
   &:active ~ .form-page__input-image {
     color: $mishka-main;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    margin: 0;
+
+    font-size: 19px;
+    line-height: 1;
+  }
 }
 
 .form-page__input-image {
@@ -349,6 +476,11 @@
   right: 36px;
 
   color: rgba($color: $text-color, $alpha: 0.3);
+
+  @media (min-width: $tablet-width) {
+    top: 27px;
+    right: 76px;
+  }
 }
 
 .form-page__attention {
@@ -357,6 +489,14 @@
 
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    align-self: center;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .form-page__submit-wrapper {
@@ -366,7 +506,6 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 167px;
   }
 }
 
