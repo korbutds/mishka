@@ -1,3 +1,21 @@
+.catalog__header {
+  background-color: $footer-color;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -55px;
+
+    border-top: 1px solid $mishka-shadow;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: auto 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: auto 34px;
+  }
+}
+
 .catalog__title {
   margin: 0;
   margin-left: auto;
@@ -10,22 +28,13 @@
   font-weight: 700;
   text-align: center;
 
-  background-color: $footer-color;
-
   @media (min-width: $tablet-width) {
-    margin-top: -55px;
     margin-bottom: 68px;
     padding-top: 100px;
     padding-bottom: 86px;
 
     font-size: 43px;
     line-height: 50px;
-
-    border-top: 1px solid $mishka-shadow;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-position: bottom;
-    background-repeat: repeat-x;
-    background-size: auto 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,7 +43,6 @@
 
     font-size: 53px;
     line-height: 57px;
-    background-size: auto 34px;
   }
 }
 
