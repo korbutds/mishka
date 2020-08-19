@@ -1,8 +1,10 @@
 .main-nav {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: auto;
   padding: 0;
+  z-index: 1;
 
   font-size: 17px;
   line-height: 24px;

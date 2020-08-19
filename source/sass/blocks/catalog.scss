@@ -53,8 +53,10 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 316px 316px 316px;
-    gap: 52px;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 52px;
+    column-gap: 40px;
+    margin-bottom: 53px;
   }
 }
 
@@ -72,6 +74,8 @@
   @media (min-width: $desktop-width) {
     width: 316px;
     flex-direction: column;
+    margin-bottom: 0;
+
   }
 
   &:hover .catalog__description,
