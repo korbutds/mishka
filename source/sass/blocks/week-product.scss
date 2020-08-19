@@ -1,23 +1,90 @@
 .week-product {
-  padding-top: 31px;
-  padding-bottom: 36px;
+  padding-top: 32px;
+  padding-bottom: 43px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: 50% 100%;
+  background-size: auto 6px;
 
-  border-bottom: 6px solid $text-color;
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 83px;
+    background-size: auto 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+    padding-bottom: 96px;
+    background-repeat: no-repeat;
+    background-size: auto 23px;
+  }
+}
+
+.week-product__inner {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: auto auto auto 170px;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "tit tit tit lab" "ab ab img img" "lis lis img img" "pr pr img img""btn btn img img";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(6, 175px);
+    grid-template-rows: repeat(5, min-content);
+    grid-template-areas: none;
+  }
 }
 
 .week-product__title {
   margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: tit;
+    margin-bottom: 37px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    padding-top: 43px;
+    z-index: 1;
+
+    align-self: center;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .week-product__label {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 
   font-size: 17px;
-  line-height: 20px;
+  line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
   color: $mishka-main;
+
+  @media (min-width: $tablet-width) {
+    grid-area: lab;
+    padding-right: 10px;
+    padding-left: 54px;
+    padding-top: 6px;
+    margin: 0;
+
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 0 30px;
+    align-self: center;
+  }
 }
 
 .week-product__about {
@@ -26,15 +93,40 @@
 
   line-height: 24px;
   color: $mishka-button;
+
+  @media (min-width: $tablet-width) {
+    grid-area: ab;
+    margin-bottom: 17px;
+    padding-right: 40px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
 }
 
 .week-product__list {
   display: flex;
   flex-direction: column;
+  margin: 0;
   margin-bottom: 28px;
 
   line-height: 20px;
   color: $mishka-button;
+
+  @media (min-width: $tablet-width) {
+    grid-area: lis;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
 }
 
 .week-product__description {
@@ -42,20 +134,77 @@
 }
 
 .week-product__image-container {
-  width: 260px;
-  height: 315px;
-  margin-bottom: 26px;
+  &--mobile {
+    width: 260px;
+    height: 315px;
+    margin-bottom: 27px;
+  }
+
+  &--tablet {
+    display: none;
+    width: 333px;
+    height: 404px;
+  }
+
+  &--desktop {
+    display: none;
+    width: 525px;
+    height: 636px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: img;
+    width: 333px;
+    height: 404px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: 636px;
+    grid-column: 4 / -1;
+    grid-row: 1 / -1;
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
 }
 
 .week-product__price {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
   color: $mishka-button;
+
+  @media (min-width: $tablet-width) {
+    grid-area: pr;
+    margin-bottom: 0;
+    padding-top: 10px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+  }
 }
 
 .week-product__item {
@@ -72,4 +221,15 @@
 
 .week-product__button {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    grid-area: btn;
+    width: 292px;
+    align-self: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 4;
+    grid-row: 5 / -1;
+  }
 }

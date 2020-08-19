@@ -1,7 +1,36 @@
 .page-footer {
   background-color: $footer-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0;
+  }
+}
+
+.page-footer__inner {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 33% 33% 34%;
+  }
 }
 
 .page-footer__logo {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-self: center;
+  }
+}
+
+.page-footer__image {
+  align-self: center;
+}
+
+.page-footer__social {
+  align-self: center;
+}
+
+.page-footer__copyright {
+  align-self: end;
 }

@@ -3,6 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 45px;
+  }
 }
 
 .copyright__text {
@@ -11,6 +16,11 @@
   font-size: 19px;
   line-height: 19px;
   font-weight: 700;
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: 29px;
+  }
 }
 
 .copyright__link {

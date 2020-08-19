@@ -1,8 +1,26 @@
 .catalog-nav-list {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-right: auto;
+
+    font-size: 15px;
+  }
+}
+
+.catalog-nav-list__item {
+  min-width: 220px;
 }
 
 .catalog-nav-list__link {
+  display: inline-block;
+
   @include link-behavior;
-  display: none;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-bottom: 10px;
+    padding-top: 19px;
+  }
 }

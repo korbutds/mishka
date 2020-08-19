@@ -1,11 +1,69 @@
 .review {
-  padding-bottom: 45px;
+  padding-bottom: 52px;
 
-  border-bottom: 6px solid $mishka-shadow;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: 50% 100%;
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 85px;
+
+    background-size: auto 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 90px;
+
+    background-size: auto 23px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__inner {
+    height: 457px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__inner {
+    padding-left: 225px;
+    background-position-x: 50px;
+  }
 }
 
 .review__title {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 85px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 79px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.review__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .review__list {
@@ -22,6 +80,18 @@
   margin-bottom: 29px;
 
   line-height: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 0;
+    margin-bottom: 37px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 19px;
+  }
 }
 
 .review__citation {
@@ -29,6 +99,10 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .review__social-link {
@@ -39,6 +113,14 @@
 .review__toggles {
   display: flex;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+
+    margin: 0;
+    bottom: 32px;
+    right: 0;
+  }
 }
 
 .review__toggle {
@@ -48,6 +130,7 @@
   width: 130px;
   height: 52px;
 
+  cursor: pointer;
   background-color: $bcg-color;
   border: 1px solid $mishka-shadow;
   background-repeat: no-repeat;
@@ -71,8 +154,22 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 88px;
+
+    border: none;
+  }
 }
 
 .review__button {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -70px;
+    right: 0;
+
+    width: 175px;
+  }
 }

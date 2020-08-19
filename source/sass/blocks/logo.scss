@@ -3,14 +3,46 @@
   height: 35px;
 
   @include link-behavior;
+
+  @media (min-width: $tablet-width) {
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 72px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .logo__icon {
   &--tablet-type {
     display: none;
+    height: 46px;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+      display: inline-block;
+    }
   }
 
   &--desktop-type {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo__icon--mobile-type {
     display: none;
   }
 }

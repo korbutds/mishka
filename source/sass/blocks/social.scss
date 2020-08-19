@@ -5,6 +5,18 @@
   padding: 25px 59px 20px;
 
   border-bottom: 1px solid $mishka-shadow;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 105px;
+    padding-right: 100px;
+  }
 }
 
 .social__item {

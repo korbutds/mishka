@@ -1,8 +1,25 @@
+.shopping-list {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
 .shopping-list__label {
+  position: relative;
+
   display: block;
+  margin: 0 auto;
   padding-top: 27px;
   padding-bottom: 26px;
-  padding-left: 76px;
+  padding-left: 74px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 31px 10px;
+    border-left: 1px solid rgba($color: $text-color, $alpha: 0.1);
+    border-right: 1px solid rgba($color: $text-color, $alpha: 0.1);
+  }
 }
 
 .shopping-list__search {
@@ -10,8 +27,16 @@
 
   border: none;
 
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
+
   &::placeholder {
     color: $text-color;
+
+    @media (min-width: $tablet-width) {
+      color: transparent;
+    }
   }
 }
 
@@ -27,12 +52,35 @@
   &:focus-within .shopping-list__icon {
     color: rgba($color: $mishka-main, $alpha: 0.3);
   }
+
+  &--cart {
+    @media (min-width: $tablet-width) {
+      min-width: 265px;
+
+      text-align: right;
+    }
+  }
+}
+
+.shopping-list__link {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 10px;
+    padding-top: 33px;
+  }
 }
 
 .shopping-list__icon {
   position: absolute;
-  left: 33px;
+  left: 32px;
   top: 32px;
 
   color: rgba($color: $text-color, $alpha: 0.2);
+
+  @media (min-width: $tablet-width) {
+    left: 34px;
+    top: 36px;
+  }
 }

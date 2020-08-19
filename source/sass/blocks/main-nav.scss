@@ -1,23 +1,51 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 0;
+
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  text-align: center;
-}
 
-.main-nav.container {
-  padding: 0;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+  }
 }
 
 .main-nav__menu {
   position: relative;
+  order: -2;
 
-  padding: 22px 0 16px;
+  padding: 22px 10px 16px;
+
+  text-align: center;
+
+  border-bottom: 1px solid $mishka-shadow;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+    padding-left: 0;
+
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 10px;
+  }
 }
 
 .main-nav__toggle {
   position: absolute;
-  right: 29px;
+  right: 30px;
   top: 29px;
 
   padding: 0;
@@ -25,31 +53,62 @@
   border: none;
   background-color: $bcg-color;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
   @include list-reset;
 
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav__item {
-  box-shadow: 0 1px 0 $mishka-shadow, inset 0 1px 0 $mishka-shadow;
+  margin: 0 auto;
+  border-bottom: 1px solid $mishka-shadow;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .main-nav__link {
   @include link-behavior;
   display: block;
-  padding-top: 29px;
+  margin: 0 auto;
+  padding-top: 28px;
   padding-bottom: 26px;
   padding-left: 76px;
+  padding-right: 10px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .main-nav__features {
   display: none;
+  margin: 0;
+  padding-bottom: 10px;
+  align-self: flex-end;
 
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
   color: $mishka-button;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

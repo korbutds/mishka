@@ -1,6 +1,16 @@
 .cart-modal {
-  padding-top: 30px;
+  padding: 30px;
   padding-bottom: 46px;
+  margin: 0 auto;
+  width: 320px;
+
+  border: 1px solid $modal-border;
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+    padding-left: 108px;
+    padding-right: 108px;
+  }
 }
 
 .cart-modal__title {
@@ -16,7 +26,11 @@
 
 .cart-modal__size {
   display: flex;
-  justify-content: space-between;
+  margin-right: -7px;
+}
+
+.cart-modal__label-wrapper {
+  flex-grow: 1;
 }
 
 .cart-modal__legend {
@@ -28,9 +42,10 @@
 
 .cart-modal__label {
   display: block;
-  width: 82px;
   padding: 18px;
+  margin-right: 7px;
 
+  cursor: pointer;
   color: $mishka-button;
   font-size: 17px;
   line-height: 17px;
@@ -39,6 +54,11 @@
   text-align: center;
 
   border: 2px solid rgba($color: $mishka-button, $alpha: 0.1);
+
+  &:hover,
+  &:focus {
+    border-color: rgba($mishka-button, 0.4);
+  }
 }
 
 .cart-modal__checkbox:checked ~ .cart-modal__label {
