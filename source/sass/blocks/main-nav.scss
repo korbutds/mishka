@@ -19,8 +19,8 @@
   }
 
   &--close .main-nav__toggle {
-    width: 20px;
-    height: 14px;
+    width: 100px;
+    height: 100%;
 
     background-image: url("../img/icon-menu-open.svg");
     background-repeat: no-repeat;
@@ -65,8 +65,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  right: 30px;
-  top: 29px;
+  right: 0;
+  top: 0;
 
   padding: 0;
 
