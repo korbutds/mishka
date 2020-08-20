@@ -11,11 +11,13 @@
   font-weight: 700;
 
   &--open .main-nav__toggle {
-    width: 21px;
-    height: 20px;
+    width: 100px;
+    height: 100%;
 
     background-image: url("../img/icon-menu-close.svg");
     background-size: 21px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--close .main-nav__toggle {
