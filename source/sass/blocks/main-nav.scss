@@ -10,6 +10,24 @@
   line-height: 24px;
   font-weight: 700;
 
+  &--open .main-nav__toggle {
+    width: 21px;
+    height: 20px;
+
+    background-image: url("../img/icon-menu-close.svg");
+    background-size: 21px 20px;
+  }
+
+  &--close .main-nav__toggle {
+    width: 20px;
+    height: 14px;
+
+    background-image: url("../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 14px;
+    background-position: center;
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -111,6 +129,21 @@
   color: $mishka-button;
 
   @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--close .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list,
+  .main-nav--nojs .shopping-list {
     display: block;
   }
 }
