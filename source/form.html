@@ -13,7 +13,12 @@
         <nav class="main-nav main-nav--close main-nav--nojs container">
           <div class="main-nav__menu">
             <a class="main-nav__logo logo" href="index.html">
-              <svg class="logo__icon logo__icon--mobile-type" width="86" height="35">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg" width="86" height="35">
+              </picture>
+              <!-- <svg class="logo__icon logo__icon--mobile-type" width="86" height="35">
                 <use xlink:href="#mishka-logo-mobile"></use>
               </svg>
               <svg class="logo__icon logo__icon--tablet-type" width="113" height="46">
@@ -21,7 +26,7 @@
               </svg>
               <svg class="logo__icon logo__icon--desktop-type" width="149" height="72">
                 <use xlink:href="#mishka-logo-desktop"></use>
-              </svg>
+              </svg> -->
             </a>
             <button class="main-nav__toggle" type="button"></button>
           </div>

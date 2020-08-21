@@ -13,15 +13,11 @@
         <nav class="main-nav main-nav--close main-nav--nojs container">
           <div class="main-nav__menu">
             <a class="main-nav__logo logo logo--index">
-              <svg class="logo__icon logo__icon--mobile-type" width="86" height="35">
-                <use xlink:href="#mishka-logo-mobile"></use>
-              </svg>
-              <svg class="logo__icon logo__icon--tablet-type" width="113" height="46">
-                <use xlink:href="#mishka-logo-tablet"></use>
-              </svg>
-              <svg class="logo__icon logo__icon--desktop-type" width="149" height="72">
-                <use xlink:href="#mishka-logo-desktop"></use>
-              </svg>
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg">
+              </picture>
             </a>
             <button class="main-nav__toggle" type="button"></button>
           </div>
@@ -97,14 +93,12 @@
               <dd class="week-product__description">15 см</dd>
             </div>
           </dl>
-          <div class="week-product__image-container week-product__image-container--mobile">
-            <img class="week-product__image week-product__image--mobile" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанная корзинка цвета «Тиффани»/серый">
-          </div>
-          <div class="week-product__image-container week-product__image-container--tablet">
-            <img class="week-product__image week-product__image--mobile" src="img/triple-set-tablet@1x.jpg" width="333" height="404" alt="Вязанная корзинка цвета «Тиффани»/серый">
-          </div>
-          <div class="week-product__image-container week-product__image-container--desktop">
-            <img class="week-product__image week-product__image--mobile" src="img/triple-set-desktop@1x.jpg" width="525" height="636" alt="Вязанная корзинка цвета «Тиффани»/серый">
+          <div class="week-product__image-container">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="week-product__image week-product__image--mobile" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанная корзинка цвета «Тиффани»/серый">
+            </picture>
           </div>
           <p class="week-product__price">Цена: 990 руб.</p>
           <a class="button week-product__button js-order" href="#">Заказать</a>
@@ -163,14 +157,12 @@
             </div>
           </dl>
         </div>
-        <div class="contacts__map-wrapper contacts__map-wrapper--mobile">
-          <img class="contacts__map contacts__map--mobile" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Карта расположения офиса: г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101">
-        </div>
-        <div class="contacts__map-wrapper contacts__map-wrapper--tablet">
-          <img class="contacts__map contacts__map--tablet" src="img/map-tablet@1x.jpg" width="768" height="457" alt="Карта расположения офиса: г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101">
-        </div>
-        <div class="contacts__map-wrapper contacts__map-wrapper--desktop">
-          <img class="contacts__map contacts__map--desktop" src="img/map-desktop@1x.jpg" width="525" height="457" alt="Карта расположения офиса: г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101">
+        <div class="contacts__map-wrapper">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x,img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map contacts__map--mobile" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта расположения офиса: г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101">
+          </picture>
         </div>
         <a class="button contacts__button" href="#">Напишите нам</a>
       </section>
