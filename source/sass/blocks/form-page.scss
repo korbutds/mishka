@@ -430,6 +430,7 @@
   &:disabled ~ .form-page__label {
     opacity: 0.2;
     color: $mishka-button;
+    cursor: default;
 
     &:hover::before {
       border-color: $mishka-button;
@@ -466,6 +467,7 @@
   &:disabled ~ .form-page__label {
     opacity: 0.2;
     color: $mishka-button;
+    cursor: default;
 
     &:hover::before {
       border-color: $mishka-button;
