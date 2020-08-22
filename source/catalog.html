@@ -13,21 +13,17 @@
         <nav class="main-nav main-nav--close main-nav--nojs container">
           <div class="main-nav__menu">
             <a class="main-nav__logo logo" href="index.html">
-              <svg class="logo__icon logo__icon--mobile-type" width="86" height="35">
-                <use xlink:href="#mishka-logo-mobile"></use>
-              </svg>
-              <svg class="logo__icon logo__icon--tablet-type" width="113" height="46">
-                <use xlink:href="#mishka-logo-tablet"></use>
-              </svg>
-              <svg class="logo__icon logo__icon--desktop-type" width="149" height="72">
-                <use xlink:href="#mishka-logo-desktop"></use>
-              </svg>
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg">
+              </picture>
             </a>
             <button class="main-nav__toggle" type="button"></button>
           </div>
           <ul class="main-nav__list site-list">
             <li class="main-nav__item site-list__item site-list__item--catalog">
-              <a class="main-nav__link site-list__link" href="#">Каталог товаров</a>
+              <a class="main-nav__link site-list__link">Каталог товаров</a>
             </li>
             <li class="main-nav__item site-list__item site-list__item--bind">
               <a class="main-nav__link site-list__link  site-list__link--bind" href="form.html">Вязание на заказ</a>
@@ -71,9 +67,11 @@
         <ul class="catalog__list">
           <li class="catalog__item">
             <a class="catalog__link catalog__image-container" href="#">
-              <img class="catalog__image catalog__image--mobile" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Изображения игрушки Зайчик-попрыгайчик">
-              <img class="catalog__image catalog__image--tablet" src="img/photo-hare-tablet@1x.jpg" width="335" height="335" alt="Изображения игрушки Зайчик-попрыгайчик">
-              <img class="catalog__image catalog__image--desktop" src="img/photo-hare-desktop@1x.jpg" width="316" height="462" alt="Изображения игрушки Зайчик-попрыгайчик">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Изображения игрушки Зайчик-попрыгайчик">
+              </picture>
             </a>
             <div class="catalog__description">
               <div class="catalog__info">
@@ -103,9 +101,11 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link catalog__image-container" href="#">
-              <img class="catalog__image catalog__image--mobile" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Изображения корзинки для белья">
-              <img class="catalog__image catalog__image--tablet" src="img/photo-bowl-tablet@1x.jpg" width="335" height="335" alt="Изображения корзинки для белья">
-              <img class="catalog__image catalog__image--desktop" src="img/photo-bowl-desktop@1x.jpg" width="316" height="462" alt="Изображения корзинки для белья">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Изображения корзинки для белья">
+              </picture>
             </a>
             <div class="catalog__description">
               <div class="catalog__info">
@@ -135,9 +135,11 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link catalog__image-container" href="#">
-              <img class="catalog__image catalog__image--mobile" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Изображения корзинки для белья">
-              <img class="catalog__image catalog__image--tablet" src="img/photo-toys-tablet@1x.jpg" width="335" height="335" alt="Изображения корзинки для белья">
-              <img class="catalog__image catalog__image--desktop" src="img/photo-toys-desktop@1x.jpg" width="316" height="462" alt="Изображения корзинки для белья">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Изображения корзинки для белья">
+              </picture>
             </a>
             <div class="catalog__description">
               <div class="catalog__info">
@@ -170,14 +172,13 @@
       <section class="process container">
         <div class="process__inner">
           <h2 class="process__title">Процесс производства</h2>
-          <div class="process__video-wrapper process__video-wrapper--mobile">
-            <video src="#" poster="img/video-mobile@1x.jpg" width="260" height="150"></video>
-          </div>
-          <div class="process__video-wrapper process__video-wrapper--tablet">
-            <video src="#" poster="img/video-tablet@1x.jpg" width="668" height="455"></video>
-          </div>
-          <div class="process__video-wrapper process__video-wrapper--desktop">
-            <video src="#" poster="img/video-desktop@1x.jpg" width="682" height="455"></video>
+          <div class="process__video-wrapper">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x 2x">
+              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x">
+            </picture>
+            <button class="process__video-button" type="button"></button>
           </div>
           <div class="process__about">
             <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>

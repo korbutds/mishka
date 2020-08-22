@@ -8,7 +8,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
-    padding-bottom: 83px;
+    padding-bottom: 71px;
     background-size: auto 17px;
   }
 
@@ -134,36 +134,16 @@
 }
 
 .week-product__image-container {
-  &--mobile {
     width: 260px;
     height: 315px;
     margin-bottom: 27px;
-  }
-
-  &--tablet {
-    display: none;
-    width: 333px;
-    height: 404px;
-  }
-
-  &--desktop {
-    display: none;
-    width: 525px;
-    height: 636px;
-  }
 
   @media (min-width: $tablet-width) {
     grid-area: img;
     width: 333px;
     height: 404px;
-
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
+    margin-bottom: 0;
+    margin-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -171,14 +151,7 @@
     height: 636px;
     grid-column: 4 / -1;
     grid-row: 1 / -1;
-
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
+    margin-bottom: 0;
   }
 }
 

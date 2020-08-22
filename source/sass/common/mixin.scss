@@ -1,6 +1,7 @@
 @mixin link-behavior {
   text-decoration: none;
   color: $text-color;
+  cursor: pointer;
 
   &:hover,
   &:focus {
