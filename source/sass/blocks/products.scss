@@ -91,7 +91,7 @@
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
   }
 }
 
@@ -112,6 +112,10 @@
     width: 334px;
     margin-right: 0;
     padding-bottom: 12px;
+
+    &:hover {
+      padding-bottom: 17px;
+    }
   }
 
   @media (min-width: $desktop-width) {
