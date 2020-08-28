@@ -21,6 +21,13 @@
   &:not(&--index):active {
     opacity: 0.3;
   }
+
+  &--index {
+    &:hover {
+      opacity: 1;
+      cursor: default;
+    }
+  }
 }
 
 .logo__icon {
