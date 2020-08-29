@@ -138,6 +138,8 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 34px;
     font-size: 15px;
     line-height: 30px;
   }

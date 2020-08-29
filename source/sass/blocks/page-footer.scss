@@ -10,7 +10,7 @@
   display: grid;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 33% 33% 34%;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
