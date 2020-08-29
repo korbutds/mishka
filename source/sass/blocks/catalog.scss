@@ -63,7 +63,8 @@
 .catalog__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 27px;
+  min-height: 334px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     width: 668px;
@@ -187,7 +188,7 @@
 .catalog__order {
   display: flex;
   justify-content: space-between;
-  padding: 23px 27px;
+  padding: 23px 27px 20px;
 
   border-top: 1px solid $mishka-shadow;
 
