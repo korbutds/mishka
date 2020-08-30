@@ -3,14 +3,13 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 25px 20px 20px;
+  padding: 15px 20px 20px;
 
   border-bottom: 1px solid $mishka-shadow;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-right: 0;
-    justify-content: flex-start;
 
     border-bottom: none;
   }
@@ -22,17 +21,11 @@
 
 .social__item {
   align-self: center;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 41px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
 }
 
 .social__link {
+  display: block;
+  padding: 10px;
   color: $text-color;
 
   &:hover,

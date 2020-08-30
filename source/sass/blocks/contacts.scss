@@ -132,6 +132,10 @@
   &:active {
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 7px;
+  }
 }
 
 .contacts__map-wrapper {

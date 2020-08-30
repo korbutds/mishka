@@ -1,5 +1,5 @@
 .copyright {
-  padding: 20px 40px 24px;
+  padding: 10px 40px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,7 +7,12 @@
   @media (min-width: $tablet-width) {
     padding-right: 0;
     padding-left: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 24px;
+    padding-top: 24px;
   }
 }
 
