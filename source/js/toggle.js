@@ -31,9 +31,7 @@ orderBtn.addEventListener('click', function(evt) {
   }
 });
 
-overlay.addEventListener('click', function() {
-  cartModalClose();
-});
+overlay.addEventListener('click', cartModalClose);
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
