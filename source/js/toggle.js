@@ -24,20 +24,18 @@ navToggle.addEventListener('click', function() {
 orderBtn.addEventListener('click', function(evt) {
   evt.preventDefault();
   if (cartModal.classList.contains('cart-modal--close')) {
-    cartModal.classList.remove('cart-modal--close')
-    overlay.classList.add('overlay--active')
-
-
+    cartModal.classList.remove('cart-modal--close');
+    overlay.classList.add('overlay--active');
   }
 });
 
 document.addEventListener('click', function(evt) {
   var isClickInside = cartModal.contains(evt.target);
   if (isClickInside) {
-    console.log('click inside')
+    console.log('click inside');
     cartModalClose();
   } else {
-    console.log('click outside')
+    console.log('click outside');
   }
 });
 
@@ -45,6 +43,6 @@ window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
     cartModalClose();
-    console.log('close')
-  };
+    console.log('close');
+  }
 });
