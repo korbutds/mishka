@@ -5,8 +5,10 @@ var cartModal = document.querySelector('.cart-modal');
 var overlay = document.querySelector('.overlay');
 
 var cartModalClose = function() {
-  overlay.classList.remove('overlay--active');
-  cartModal.classList.add('cart-modal--close');
+  if (!cartModal.classList.contains('cart-modal--close')) {
+    cartModal.classList.add('cart-modal--close');
+    overlay.classList.remove('overlay--active');
+  }
 };
 
 navMain.classList.remove('main-nav--nojs');
@@ -29,19 +31,12 @@ orderBtn.addEventListener('click', function(evt) {
   }
 });
 
-document.addEventListener('click', function(evt) {
-  var isClickInside = cartModal.contains(evt.target);
-  if (isClickInside) {
-    console.log('click inside');
-    cartModalClose();
-  } else {
-    console.log('click outside');
-  }
+overlay.addEventListener('click', function() {
+  cartModalClose();
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    evt.preventDefault();
     cartModalClose();
     console.log('close');
   }
