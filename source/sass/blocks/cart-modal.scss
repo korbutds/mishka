@@ -1,10 +1,23 @@
 .cart-modal {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  margin: 0 auto;
   padding: 30px;
   padding-bottom: 46px;
-  margin: 0 auto;
-  width: 320px;
+  width: 100%;
+  z-index: 3;
 
   border: 1px solid $modal-border;
+  background-color: $bcg-color;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  animation: bounce 0.6s;
+
+  &--close {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     width: 566px;

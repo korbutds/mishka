@@ -1,3 +1,5 @@
+@import "common/fonts.scss";
+@import "common/animation.scss";
 @import "common/vars.scss";
 @import "common/mixin.scss";
 @import "common/common.scss";
@@ -22,3 +24,4 @@
 @import "blocks/form-page.scss";
 @import "blocks/catalog.scss";
 @import "blocks/process.scss";
+@import "blocks/overlay.scss";

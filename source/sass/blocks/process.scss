@@ -25,7 +25,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: auto auto;
-    grid-template-rows: min-content min-content min-content;
+    grid-template-rows: min-content 1fr;
   }
 }
 
@@ -68,6 +68,7 @@
   background-size: 100% auto;
 
   transform: translate(-50%, -50%);
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -104,9 +105,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 60px 0 79px;
+    padding: 95px 60px 0 79px;
 
-    background-position: 79px 45px;
+    background-position: 79px 41px;
   }
 }
 
@@ -124,6 +125,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 64px;
+    padding-left: 79px;
 
     font-size: 15px;
     line-height: 30px;
@@ -131,16 +133,22 @@
 }
 
 .process__description {
-  margin: 0;
-  margin-bottom: 16px;
-  padding: 25px 0;
+  margin: 0 0 6px;
+  padding: 34px 0;
 
   font-size: 13px;
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 34px;
     font-size: 15px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 28px;
+    padding-bottom: 47px;
   }
 }
 

@@ -25,7 +25,7 @@
     background-color: $index-main;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1150px auto;
     background-position: center 0;
     background-clip: border-box;
 
@@ -53,8 +53,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 34px;
-
     background-image: url("../img/hero-desktop@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -96,12 +94,27 @@
 }
 
 .products__item {
+  &:hover,
+  &:focus-within {
+    transform: translateY(-5px);
+  }
+
   &--interior {
     background-color: $mishka-main;
+
+    &:hover,
+    &:focus-within {
+      background-color: $mishka-main-hover;
+    }
   }
 
   &--toys {
     background-color: $mishka-main-dark;
+
+    &:hover,
+    &:focus-within {
+      background-color: $mishka-main-dark-hover;
+    }
 
     @media (min-width: $tablet-width) {
       margin-left: 0;
@@ -111,11 +124,6 @@
   @media (min-width: $tablet-width) {
     width: 334px;
     margin-right: 0;
-    padding-bottom: 12px;
-
-    &:hover {
-      padding-bottom: 17px;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -125,10 +133,10 @@
 
 .products__link {
   display: block;
-  min-height: 103px;
-  padding: 0 30px;
   padding-top: 24px;
   padding-right: 120px;
+  padding-bottom: 31px;
+  padding-left: 30px;
   width: 320px;
   margin: 0 auto;
 
@@ -178,12 +186,11 @@
     padding-top: 26px;
     padding-right: 167px;
     padding-left: 35px;
-    padding-bottom: 10px;
+    padding-bottom: 46px;
     margin: 0;
     width: auto;
     font-size: 20px;
     line-height: 30px;
-    min-height: 119px;
   }
 
   @media (min-width: $desktop-width) {
