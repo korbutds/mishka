@@ -1,8 +1,9 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-var orderBtn = document.querySelector('.js-order');
+var orderBtn = document.querySelectorAll('.js-order');
 var cartModal = document.querySelector('.cart-modal');
 var overlay = document.querySelector('.overlay');
+// var basketButton = document.querySelectorAll(".basket-btn");
 
 var cartModalClose = function() {
   if (!cartModal.classList.contains('cart-modal--close')) {
@@ -23,19 +24,21 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-orderBtn.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  if (cartModal.classList.contains('cart-modal--close')) {
-    cartModal.classList.remove('cart-modal--close');
-    overlay.classList.add('overlay--active');
-  }
-});
-
 overlay.addEventListener('click', cartModalClose);
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     cartModalClose();
     console.log('close');
   }
 });
+
+for (var i=0; i < orderBtn.length; i++) {
+  orderBtn[i].addEventListener("click", function(evt) {
+    evt.preventDefault();
+    if (cartModal.classList.contains('cart-modal--close')) {
+      cartModal.classList.remove('cart-modal--close');
+      overlay.classList.add('overlay--active');
+    }
+  });
+}

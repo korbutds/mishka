@@ -279,6 +279,10 @@
       margin-right: 0;
     }
   }
+
+  &:focus-within {
+    outline: $text-color solid 2px;
+  }
 }
 
 .form-page__label {
@@ -443,7 +447,7 @@
     content: "";
     position: absolute;
     top: 14px;
-    left: 6px;
+    left: 8px;
 
     display: block;
     width: 22px;
