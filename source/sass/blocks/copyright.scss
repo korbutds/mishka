@@ -1,18 +1,18 @@
 .copyright {
-  padding: 10px 40px 24px;
+  padding: 21px 40px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding-right: 0;
-    padding-left: 40px;
-    padding-bottom: 31px;
+    padding: 0;
+    min-width: 182px;
+    padding-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 24px;
-    padding-top: 24px;
+    padding-bottom: 28px;
+    padding-top: 20px;
   }
 }
 

@@ -82,7 +82,7 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 
   color: $mishka-button;
 
@@ -101,7 +101,7 @@
 
 .contacts__item {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -121,6 +121,7 @@
 .contacts__e-mail {
   color: $mishka-button;
   text-decoration: none;
+  padding-bottom: 3px;
 
   border-bottom: 1px solid $mishka-main;
 
@@ -131,6 +132,7 @@
 
   &:active {
     border: none;
+    color: $mishka-main;
   }
 
   @media (min-width: $desktop-width) {
@@ -159,10 +161,40 @@
     height: 457px;
     margin-top: 72px;
   }
+
+  &--picture {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 31%;
+      right: 36%;
+      width: 67px;
+      height: 100px;
+
+      background-image: url("../img/icon-map-pin.svg");
+      background-size: 67px 100px;
+      background-repeat: no-repeat;
+    }
+
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        top: 30%;
+        right: 44%;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        top: 32%;
+        right: 42%;
+      }
+    }
+  }
 }
 
 .contacts__button {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   align-self: center;
   padding: 14px 54px;
 
@@ -178,4 +210,9 @@
 
     margin: 0;
   }
+}
+
+.picture-close,
+.iframe-close {
+  display: none;
 }

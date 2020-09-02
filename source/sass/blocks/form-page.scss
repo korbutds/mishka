@@ -1,5 +1,5 @@
 .form-page {
-  margin-bottom: 56px;
+  margin-bottom: 54px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
@@ -80,7 +80,7 @@
   position: relative;
 
   display: grid;
-  margin-bottom: 18px;
+  margin-bottom: 28px;
 
   border: none;
 
@@ -120,7 +120,7 @@
 
     @media (min-width: $tablet-width) {
       padding-left: 217px;
-      padding-top: 53px;
+      padding-top: 32px;
       margin-bottom: 47px;
     }
 
@@ -235,7 +235,7 @@
     }
 
     &--fio {
-      top: 75px;
+      top: 52px;
     }
 
     &--tel {
@@ -309,6 +309,7 @@
 
   &--radio {
     padding-left: 62px;
+    margin-bottom: 14px;
 
     &::before {
       content: "";
@@ -384,12 +385,21 @@
 
   border-top: 1px solid $mishka-main;
 
+  &--radio {
+    padding-top: 36px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 30px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     border: none;
 
     &--checkbox {
       padding-top: 49px;
       padding-left: 168px;
+      padding-bottom: 22px;
       flex-direction: row;
     }
   }
@@ -571,6 +581,7 @@
 
   font-size: 14px;
   line-height: 16px;
+  color: $mishka-button;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

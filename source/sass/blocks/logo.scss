@@ -1,7 +1,6 @@
 .logo {
   display: inline-flex;
   height: 35px;
-  align-self: center;
 
   @include link-behavior;
 
@@ -26,25 +25,6 @@
     &:hover {
       opacity: 1;
       cursor: default;
-    }
-  }
-}
-
-.logo__icon {
-  &--tablet-type {
-    display: none;
-    height: 46px;
-
-    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-      display: inline-block;
-    }
-  }
-
-  &--desktop-type {
-    display: none;
-
-    @media (min-width: $desktop-width) {
-      display: inline-block;
     }
   }
 }

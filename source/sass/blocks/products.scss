@@ -20,6 +20,7 @@
   @media (min-width: $tablet-width) {
     margin-top: -56px;
     padding-top: 156px;
+    padding-bottom: 4px;
     min-height: 759px;
 
     background-color: $index-main;
@@ -43,12 +44,12 @@
       width: 100%;
       height: 24px;
       left: 0;
-      bottom: -2px;
+      bottom: 0;
 
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
-      background-position: 50% 100%;
-      background-size: auto 100%;
+      background-position: 50% 0%;
+      background-size: auto 95%;
     }
   }
 
@@ -165,6 +166,10 @@
 
       background-image: url("../img/icon-interior.svg");
       background-size: 40px 62px;
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+      }
     }
   }
 
@@ -179,6 +184,11 @@
 
       background-image: url("../img/icon-toy.svg");
       background-size: 60px 60px;
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+        right: 34px;
+      }
     }
   }
 
@@ -186,7 +196,7 @@
     padding-top: 26px;
     padding-right: 167px;
     padding-left: 35px;
-    padding-bottom: 46px;
+    padding-bottom: 42px;
     margin: 0;
     width: auto;
     font-size: 20px;

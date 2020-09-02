@@ -1,19 +1,25 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .social__list {
   @include list-reset;
   display: grid;
   grid-column-gap: 41px;
-  align-content: center;
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(3, min-content);
-  padding: 15px 20px 20px;
+  padding: 14px 20px 8px;
 
   border-bottom: 1px solid $mishka-shadow;
 
   @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 20px;
     padding-left: 0;
     padding-right: 0;
-
     border-bottom: none;
   }
 

@@ -9,7 +9,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 40px;
     padding-bottom: 71px;
-    background-size: auto 17px;
+    background-size: 772px 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,10 +61,10 @@
 
 .week-product__label {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   font-size: 17px;
-  line-height: 1;
+  line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
   color: $mishka-main;
@@ -77,6 +77,7 @@
     margin: 0;
 
     text-align: center;
+    line-height: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,7 +110,6 @@
   @media (min-width: $desktop-width) {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
-    letter-spacing: -1px;
     padding-right: 55px;
     margin-bottom: 51px;
   }

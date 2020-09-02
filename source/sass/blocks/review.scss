@@ -9,7 +9,7 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 85px;
 
-    background-size: auto 17px;
+    background-size: 772px 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +22,7 @@
 
 @media (min-width: $tablet-width) {
   .review__inner {
-    height: 457px;
+    min-height: 457px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -77,6 +77,8 @@
 
 .review__quotation {
   margin: 0;
+
+  color: $mishka-button;
 }
 
 .review__description {
@@ -106,6 +108,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
   }
 }
 
