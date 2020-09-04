@@ -30,7 +30,7 @@ navToggle.addEventListener('click', function() {
 
 overlay.addEventListener('click', cartModalClose);
 
-window.addEventListener("keydown", function(evt) {
+window.addEventListener('keydown', function(evt) {
   if (evt.keyCode === 27) {
     cartModalClose();
     console.log('close');
@@ -38,7 +38,7 @@ window.addEventListener("keydown", function(evt) {
 });
 
 for (var i=0; i < orderBtn.length; i++) {
-  orderBtn[i].addEventListener("click", function(evt) {
+  orderBtn[i].addEventListener('click', function(evt) {
     evt.preventDefault();
     if (cartModal.classList.contains('cart-modal--close')) {
       cartModal.classList.remove('cart-modal--close');
