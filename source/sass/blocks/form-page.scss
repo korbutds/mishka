@@ -172,7 +172,7 @@
   @media (min-width: $tablet-width) {
     &--type {
       padding-left: 217px;
-      margin-bottom: 20px;
+      margin-bottom: 17px;
     }
 
     &--color {
@@ -356,14 +356,20 @@
 
     @media (min-width: $tablet-width) {
       padding-left: 78px;
-      padding-top: 15px;
+      padding-top: 17px;
       padding-bottom: 20px;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
 
       &::before {
         width: 54px;
         height: 52px;
       }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 81px;
+      padding-top: 21px;
+      padding-bottom: 17px;
     }
   }
 
@@ -399,7 +405,7 @@
     &--checkbox {
       padding-top: 49px;
       padding-left: 168px;
-      padding-bottom: 22px;
+      padding-bottom: 27px;
       flex-direction: row;
     }
   }
@@ -412,8 +418,9 @@
     }
 
     &--checkbox {
+      padding-top: 46px;
       padding-left: 175px;
-      padding-bottom: 24px;
+      padding-bottom: 27px;
     }
   }
 }
@@ -550,7 +557,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 18px;
     padding-top: 15px;
-    padding-bottom: 13px;
+    padding-bottom: 12px;
     margin: 0;
 
     font-size: 19px;
