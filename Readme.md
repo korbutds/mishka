@@ -1,6 +1,6 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Дмитрий Корбут](https://up.htmlacademy.ru/adaptive/20/user/1281179).
+* Студент: [Дмитрий Корбут](https://up.htmlacademy.ru/adaptive/20/user/1281179). 
 * Наставник:[Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
@@ -20,7 +20,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 #### 1. Зарегистрируйтесь на Гитхабе
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее  зарегистрируйтесь.
 
 #### 2. Создайте форк
 
