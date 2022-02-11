@@ -18,7 +18,7 @@
     "gulp-sourcemaps": "2.6.5",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
-    "node-sass": "4.14.1",
+    "node-sass": "7.0.0",
     "posthtml-include": "^1.4.3",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
